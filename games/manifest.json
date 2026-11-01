@@ -15,14 +15,14 @@
       "title": "North or South?",
       "blurb": "Two lions, two traditions. Tell them apart.",
       "mechanic": "pick",
-      "publish": "2026-10-30"
+      "publish": "2099-01-01"
     },
     {
       "slug": "kueh-match",
       "title": "Name That Kueh",
       "blurb": "Match the kueh to what it's actually made of.",
       "mechanic": "match",
-      "publish": "2026-10-16"
+      "publish": "2099-01-01"
     },
     {
       "slug": "kampong-order",
@@ -36,7 +36,7 @@
       "title": "One Unbroken Line",
       "blurb": "Trace four rangoli designs without lifting your finger.",
       "mechanic": "trace",
-      "publish": "2099-01-01"
+      "publish": "2026-11-01"
     },
     {
       "slug": "lo-hei",
