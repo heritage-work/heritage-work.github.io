@@ -41,8 +41,8 @@
     {
       "slug": "lo-hei",
       "title": "Toss It High",
-      "blurb": "Every yusheng ingredient carries a wish. Match them up.",
-      "mechanic": "match",
+      "blurb": "Add the yusheng ingredients in order as each phrase is called, then toss it high.",
+      "mechanic": "toss",
       "publish": "2099-01-01"
     },
     {

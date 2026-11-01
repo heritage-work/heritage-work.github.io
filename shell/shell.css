@@ -6,7 +6,10 @@ body{
   -webkit-font-smoothing:antialiased;
   min-height:100dvh;
 }
-.wrap{max-width:560px;margin:0 auto;padding:16px 16px 48px}
+/* Same page width as Awaken the Lion, so every page in the hub lines up. */
+.wrap{max-width:1040px;margin:0 auto;padding:24px max(16px,env(safe-area-inset-right,0px)) 48px max(16px,env(safe-area-inset-left,0px))}
+#head p{max-width:60ch}
+#list{grid-template-columns:repeat(auto-fill,minmax(300px,1fr))}
 .topbar{display:flex;align-items:center;gap:12px;padding:14px 0;font-size:.82rem}
 .topbar a{color:var(--ink-soft);text-decoration:none}
 .topbar a:hover{color:var(--accent)}
@@ -80,3 +83,59 @@ p{margin:0 0 1em}
 .trace-board.complete .trace-guide{display:none}
 .trace-board.broke{transform:translateX(4px)}
 .trace-status{text-align:center;min-height:1.5em}
+/* toss */
+.toss-banner{display:flex;flex-direction:column;align-items:center;text-align:center;gap:2px;min-height:5.2em;margin:4px 0 8px}
+.toss-banner strong{font-family:var(--font);font-size:1.25rem}
+.toss-banner .muted{font-size:.88rem}
+.toss{position:relative;min-height:380px;border-radius:12px;background:var(--accent-soft);overflow:hidden;
+  display:flex;flex-direction:column;align-items:center;justify-content:space-between;gap:12px;padding:12px 10px 14px;touch-action:none;user-select:none;-webkit-user-select:none}
+.toss.tossing{min-height:440px;justify-content:flex-end;cursor:grab}
+.toss-plate{width:min(76%,340px);flex:none;aspect-ratio:1;display:block}
+.toss-rim{fill:#f6efe2;stroke:#c9b79c;stroke-width:1}
+.toss-dish{fill:#fffdf8;stroke:#e4d7c2;stroke-width:.6}
+.toss-heap{animation:heap .35s ease-out}
+@keyframes heap{from{opacity:0;transform:scale(.6);transform-origin:50px 50px}to{opacity:1;transform:scale(1)}}
+.toss-bits{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.toss-scale{position:absolute;left:10px;top:12px;bottom:14px;display:flex;flex-direction:column;justify-content:space-between;
+  font-size:.66rem;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-soft);border-left:2px dashed var(--line);padding-left:6px}
+.toss-tray{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;position:relative;z-index:2}
+.toss-chip{font:inherit;font-size:.86rem;font-weight:600;display:inline-flex;align-items:center;gap:8px;cursor:grab;
+  padding:8px 12px 8px 8px;border-radius:99px;border:1px solid var(--line);background:var(--card);color:var(--ink);
+  touch-action:none;position:relative}
+.toss-chip i{width:20px;height:20px;border-radius:50%}
+.toss-tray:has(.toss-chip-art){display:grid;grid-template-columns:repeat(3,minmax(0,1fr));width:min(100%,480px)}
+.toss-chip-art{flex-direction:column;justify-content:center;gap:2px;padding:6px;border-radius:14px;min-width:0;text-align:center;line-height:1.25}
+.toss-chip-art img{width:88px;max-width:100%;height:72px;object-fit:contain;pointer-events:none}
+.toss-chip-art span{min-height:2.5em;display:flex;align-items:center;justify-content:center}
+@media(min-width:540px){.toss-tray:has(.toss-chip-art){grid-template-columns:repeat(5,minmax(0,1fr));width:min(100%,760px)}}
+/* Phones: a compact 5 x 2 grid so the phrase, ingredients and plate all fit on one screen. */
+@media(max-width:539px){
+  .toss-tray:has(.toss-chip-art){grid-template-columns:repeat(5,minmax(0,1fr));gap:4px}
+  .toss-chip-art{padding:3px 2px;border-radius:10px;font-size:.62rem;line-height:1.15;gap:0}
+  .toss-chip-art img{width:44px;height:38px}
+  .toss-chip-art span{min-height:2.4em}
+  .toss-plate{width:min(64%,230px)}
+  .toss{min-height:0;gap:8px;padding:8px 6px 10px}
+}
+.toss-chip.dragging{transition:none;z-index:5;box-shadow:var(--shadow);cursor:grabbing}
+.toss-chip.wrong{animation:nope .4s ease}
+@keyframes nope{0%,100%{transform:none}25%{transform:translateX(-6px)}75%{transform:translateX(6px)}}
+.toss-saying{font-size:1.5rem;letter-spacing:.08em;color:var(--accent);min-height:1.5em}
+.toss-scale[hidden]{display:none}
+.toss-fact{font-size:.88rem;color:var(--ink-soft);text-align:center;min-height:3em;margin:10px 4px 0}
+.toss-pinyin{font-size:.85rem;color:var(--ink-soft);font-style:italic}
+.toss-tray[hidden]{display:none}
+/* about: the heritage behind a game, under the stage */
+.about{display:grid;gap:18px;margin-top:22px;padding-top:18px;border-top:1px solid var(--line)}
+.about-title{font-family:var(--font);font-size:1.4rem;margin:0}
+.about-figs{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.about figure{margin:0;display:grid;gap:6px;min-width:0}
+.about img{width:100%;height:auto;border-radius:10px;display:block}
+.about figcaption{font-size:.8rem;color:var(--ink-soft)}
+.about-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px 22px}
+.about-cards h3{font-family:var(--font);font-size:1.05rem;margin:0 0 4px}
+.about-cards p{margin:0;color:var(--ink-soft);font-size:.92rem}
+.about-sources{font-size:.76rem;color:var(--ink-soft);display:grid;gap:6px}
+.about-sources p{margin:0}
+.about-sources ul{margin:0;padding-left:18px;display:grid;gap:2px}
+.about a{color:inherit}

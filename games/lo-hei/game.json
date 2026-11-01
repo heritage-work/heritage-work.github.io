@@ -1,37 +1,252 @@
 {
   "title": "Toss It High",
   "kicker": "Yusheng and lo hei",
-  "mechanic": "match",
-  "blurb": "Every yusheng ingredient carries a wish. Match them up.",
-  "fact": "Yu (fish) sounds like the word for abundance, and sheng (raw) also means growth, so the dish's name is itself a wish. The higher you toss, the greater your fortune.",
-  "credit": "Facts from the National Heritage Board's <a href=\"https://www.roots.gov.sg/ich-landing/ich/yusheng-and-lo-hei\">Roots entry on yusheng and lo hei</a>. Text and art are original.",
+  "mechanic": "toss",
+  "blurb": "Add the yusheng ingredients in order as each phrase is called, then toss it high.",
+  "fact": "Yusheng plays on sounds: 鱼 (fish) sounds like 余 (abundance), and 生 means both ‘raw’ and ‘life’. So the name itself wishes you abundance and long life.",
+  "credit": "Source: <a href=\"https://www.roots.gov.sg/stories-landing/stories/lohei\">Lohei, Our Way: Celebrating Togetherness, Tossing Up Abundance</a> and <a href=\"https://www.roots.gov.sg/ich-landing/ich/yusheng-and-lo-hei\">Yusheng and Lo Hei</a> (ICH-096), <a href=\"https://www.roots.gov.sg\">Roots.sg</a>, National Heritage Board. Ingredient illustrations are original AI-generated artwork. Phrase audio is computer-generated; the \"Huat ah!\" recording is from <a href=\"https://djbeng.com/lohei.html\">djbeng.com</a>.",
   "content": {
-    "prompt": "Tap an ingredient, then tap the wish it carries.",
-    "pairs": [
+    "inOrder": true,
+    "opening": {
+      "saying": "恭喜发财 · 万事如意",
+      "pinyin": "Gong xi fa cai · Wan shi ru yi",
+      "wish": "Congratulations for your great wealth! May all your wishes be fulfilled!",
+      "phrase": "OPEN"
+    },
+    "ingredients": [
       {
-        "a": "Fish slices",
-        "b": "Abundance all year"
+        "name": "Raw fish",
+        "wish": "May you have abundance every year!",
+        "colour": "#f08a6c",
+        "saying": "年年有余",
+        "pinyin": "Nian nian you yu",
+        "phrase": "NNYY",
+        "note": "‘Fish’ (yu) and ‘abundance’ (yu) sound the same in Mandarin. Early immigrants swapped carp for wolf herring to avoid parasites.",
+        "image": "fish"
       },
       {
-        "a": "Pomelo and carrot",
-        "b": "Good luck and prosperity"
+        "name": "Pomelo or lime",
+        "wish": "May you have great luck and prosperity!",
+        "colour": "#f6b26b",
+        "saying": "大吉大利",
+        "pinyin": "Da ji da li",
+        "phrase": "DJDL",
+        "note": "Yusheng was brought to Singapore by Cantonese and Teochew immigrants from China.",
+        "image": "citrus"
       },
       {
-        "a": "Peanuts and crisps",
-        "b": "Great wealth"
+        "name": "Spices",
+        "wish": "May you attract wealth and treasures!",
+        "colour": "#8a5a3c",
+        "saying": "招财进宝",
+        "pinyin": "Zhao cai jin bao",
+        "phrase": "ZCJB",
+        "note": "The first chefs paired five-spice powder or pepper with 五福临门: five blessings of longevity, wealth, health, kindness and peace.",
+        "image": "spices",
+        "tossable": false
       },
       {
-        "a": "Green radish",
-        "b": "Youthful beauty"
+        "name": "Oil and plum sauce",
+        "wish": "May your capital bring you ten-thousand-fold profits!",
+        "colour": "#b5532f",
+        "saying": "一本万利 · 财源广进",
+        "pinyin": "Yi ben wan li · Cai yuan guang jin",
+        "phrase": "YBWL",
+        "note": "In the 1900s, yusheng was just raw fish, cucumber, radish and coriander, topped with vinegar, oil and sugar.",
+        "image": "oil-plum-sauce",
+        "tossable": false
       },
       {
-        "a": "Honey",
-        "b": "Sweetness and bliss"
+        "name": "Shredded carrot",
+        "wish": "Good luck is approaching!",
+        "colour": "#f29a2e",
+        "saying": "鸿运当头",
+        "pinyin": "Hong yun dang tou",
+        "phrase": "HYDT",
+        "note": "‘Red’ (hong), for the carrot's colour, sounds like ‘great’ (hong). The chefs first paired this phrase with red pickled ginger.",
+        "image": "carrot"
       },
       {
-        "a": "Lime and five-spice",
-        "b": "Blessings for everyone at the table"
+        "name": "Green radish",
+        "wish": "May you remain forever youthful!",
+        "colour": "#7fb069",
+        "saying": "青春永驻",
+        "pinyin": "Qing chun yong zhu",
+        "phrase": "QCYZ",
+        "note": "‘Green’ (qing) is the same qing as in qing chun, ‘youthful’.",
+        "image": "green-radish"
+      },
+      {
+        "name": "White radish",
+        "wish": "May you progress quickly and rise to greater heights!",
+        "colour": "#ece4d2",
+        "saying": "风生水起 · 步步高升",
+        "pinyin": "Feng sheng shui qi · Bu bu gao sheng",
+        "phrase": "FSSQ",
+        "note": "In 1964, four chefs at Lai Wah Restaurant, the ‘Four Heavenly Kings’, created the seven-coloured yusheng, 七彩鱼生.",
+        "image": "white-radish"
+      },
+      {
+        "name": "Crushed peanuts",
+        "wish": "May your house be filled with gold and silver!",
+        "colour": "#c99a52",
+        "saying": "金银满屋",
+        "pinyin": "Jin yin man wu",
+        "phrase": "JYMW",
+        "note": "The Four Heavenly Kings' version added peanuts and flour crisps for more fragrance and texture.",
+        "image": "peanuts"
+      },
+      {
+        "name": "Sesame seeds",
+        "wish": "May your business prosper!",
+        "colour": "#d8c9a3",
+        "saying": "生意兴隆",
+        "pinyin": "Sheng yi xing long",
+        "phrase": "SYXL",
+        "note": "Yusheng caught on when the four chefs added it to their Chinese New Year set dinners, and took off with younger diners in the 1970s.",
+        "image": "sesame"
+      },
+      {
+        "name": "Golden flour crisps",
+        "wish": "May your floor be covered in gold!",
+        "colour": "#e0a526",
+        "saying": "满地黄金",
+        "pinyin": "Man di huang jin",
+        "phrase": "MDHJ",
+        "note": "The deep-fried crisps are shaped like golden pillows.",
+        "image": "crisps"
       }
-    ]
+    ],
+    "tossCall": "Huat ah!",
+    "tossPrompt": "Everyone stands, chopsticks in hand. Flick up from the plate: the higher the toss, the better your fortune for the year.",
+    "tosses": 3,
+    "tossSound": "huat",
+    "mixedImage": "mixed-yusheng"
+  },
+  "assets": {
+    "OPEN": {
+      "audio": "audio/OPEN"
+    },
+    "NNYY": {
+      "audio": "audio/NNYY"
+    },
+    "DJDL": {
+      "audio": "audio/DJDL"
+    },
+    "ZCJB": {
+      "audio": "audio/ZCJB"
+    },
+    "YBWL": {
+      "audio": "audio/YBWL"
+    },
+    "HYDT": {
+      "audio": "audio/HYDT"
+    },
+    "QCYZ": {
+      "audio": "audio/QCYZ"
+    },
+    "FSSQ": {
+      "audio": "audio/FSSQ"
+    },
+    "JYMW": {
+      "audio": "audio/JYMW"
+    },
+    "SYXL": {
+      "audio": "audio/SYXL"
+    },
+    "MDHJ": {
+      "audio": "audio/MDHJ"
+    },
+    "huat": {
+      "audio": "audio/huat"
+    },
+    "fish": {
+      "image": "images/fish.webp"
+    },
+    "citrus": {
+      "image": "images/citrus.webp"
+    },
+    "spices": {
+      "image": "images/spices.webp"
+    },
+    "oil-plum-sauce": {
+      "image": "images/oil-plum-sauce.webp"
+    },
+    "carrot": {
+      "image": "images/carrot.webp"
+    },
+    "green-radish": {
+      "image": "images/green-radish.webp"
+    },
+    "white-radish": {
+      "image": "images/white-radish.webp"
+    },
+    "peanuts": {
+      "image": "images/peanuts.webp"
+    },
+    "sesame": {
+      "image": "images/sesame.webp"
+    },
+    "crisps": {
+      "image": "images/crisps.webp"
+    },
+    "mixed-yusheng": {
+      "image": "images/mixed-yusheng.webp"
+    }
+  },
+  "about": {
+    "title": "Lo hei in Singapore",
+    "figures": [
+      {
+        "src": "images/roots-lohei.jpg",
+        "alt": "Diners toss a plate of yusheng together with chopsticks",
+        "caption": "Lo hei and eating yusheng have become a tradition of Chinese New Year in Singapore. Photo: <a href=\"https://www.roots.gov.sg/ich-landing/ich/yusheng-and-lo-hei\" target=\"_blank\" rel=\"noopener\">Yusheng and Lo Hei (ICH-096)</a>, Roots.sg."
+      },
+      {
+        "src": "images/roots-centrepiece.jpg",
+        "alt": "A colourful plate of yusheng as a table centrepiece",
+        "caption": "Yusheng is usually the first dish at any family or company gathering during Chinese New Year. Photo: National Heritage Board, from <a href=\"https://www.roots.gov.sg/stories-landing/stories/lohei\" target=\"_blank\" rel=\"noopener\">Lohei, Our Way</a>, Roots.sg."
+      },
+      {
+        "src": "images/roots-fish.jpg",
+        "alt": "Slices of raw fish for yusheng",
+        "caption": "The fish is usually salmon or wolf herring. In recent years abalone and tuna have appeared too. Photo: National Heritage Board, from <a href=\"https://www.roots.gov.sg/stories-landing/stories/lohei\" target=\"_blank\" rel=\"noopener\">Lohei, Our Way</a>, Roots.sg."
+      },
+      {
+        "src": "images/roots-chef-hooi.jpg",
+        "alt": "Master chef Hooi Kok Wai",
+        "caption": "Master chef Hooi Kok Wai, one of the ‘Four Heavenly Kings’, still spends most of his day at wet markets looking for fresh fish. Photo: National Heritage Board, from <a href=\"https://www.roots.gov.sg/stories-landing/stories/lohei\" target=\"_blank\" rel=\"noopener\">Lohei, Our Way</a>, Roots.sg."
+      }
+    ],
+    "cards": [
+      {
+        "title": "More than 2,000 years",
+        "text": "The earliest written record of eating raw fish in China dates to 823 BCE. Fishermen in Jiangmen and Shunde, in Guangdong, feasted on raw carp on Renri (人日), the seventh day of the Lunar New Year, believed to be the birthday of all humanity."
+      },
+      {
+        "title": "A name of abundance",
+        "text": "鱼 (fish) sounds like 余 (abundance), and 生 means both ‘raw’ and ‘life’, so <i>yusheng</i> wishes for abundance and long life. Cantonese and Teochew immigrants brought the dish to Singapore."
+      },
+      {
+        "title": "The Four Heavenly Kings",
+        "text": "Loong Yik Kee Restaurant sold its own version in 1933. In 1964 four chefs at Lai Wah Restaurant created the seven-coloured 七彩鱼生, adding peanuts and flour crisps, and put it on their Chinese New Year set menus. It took off in the 1970s."
+      },
+      {
+        "title": "Why everyone stands",
+        "text": "The chefs paired phrases with some ingredients, and diners made up the rest. The dish was big and hard to mix, so diners may have stood up to help the waiter, and standing became a celebration of togetherness. The higher the toss, the better the year ahead."
+      },
+      {
+        "title": "Lo hei today",
+        "text": "There are halal, vegetarian and vegan versions (with gluten strips in place of fish), takeaway and supermarket packs. Friends and colleagues from every culture join in."
+      }
+    ],
+    "sources": {
+      "facts": "Facts: National Heritage Board, Roots.sg: <a href=\"https://www.roots.gov.sg/stories-landing/stories/lohei\" target=\"_blank\" rel=\"noopener\">Lohei, Our Way</a>: Celebrating Togetherness, Tossing Up Abundance, and <a href=\"https://www.roots.gov.sg/ich-landing/ich/yusheng-and-lo-hei\" target=\"_blank\" rel=\"noopener\">Yusheng and Lo Hei (ICH-096)</a>.",
+      "media": [
+        "Photos: National Heritage Board, from <a href=\"https://www.roots.gov.sg/stories-landing/stories/lohei\" target=\"_blank\" rel=\"noopener\">Lohei, Our Way</a> and <a href=\"https://www.roots.gov.sg/ich-landing/ich/yusheng-and-lo-hei\" target=\"_blank\" rel=\"noopener\">Yusheng and Lo Hei (ICH-096)</a> on Roots.sg, resized for this page.",
+        "Ingredient illustrations: original AI-generated artwork.",
+        "Phrase audio: computer-generated (text-to-speech). “Huat ah!” recording: <a href=\"https://djbeng.com/lohei.html\" target=\"_blank\" rel=\"noopener\">djbeng.com</a>."
+      ]
+    }
   }
 }

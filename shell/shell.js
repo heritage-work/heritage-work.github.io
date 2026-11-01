@@ -158,7 +158,9 @@ export async function run({ slug, root, head }) {
   const bar = el('i');
   const progress = el('div', { class: 'progress' }, bar);
   const stage = el('div', { class: 'card stage' });
-  root.append(progress, stage);
+  // Show the source while playing too, unless an about section below already lists it.
+  const source = game.credit && !game.about ? el('div', { class: 'credit', html: game.credit }) : null;
+  root.append(progress, stage, source ?? '', game.about ? aboutSection(slug, game.about) : '');
 
   // Preload before handing control to the mechanic.
   let assets = {};
@@ -193,12 +195,30 @@ export async function run({ slug, root, head }) {
     audioContext,
     finish({ score = 0, total = 0, line }) {
       progress.remove();
+      source?.remove();
       stage.replaceWith(resultScreen({ game, score, total, line }));
       remember(`done:${slug}`, { score, total, at: Date.now() });
     }
   };
 
   await mech.mount({ root: stage, content: game.content, game, api });
+}
+
+// The heritage behind a game, shown under it the whole time: photos, short facts and sources.
+//   about: { title, figures?:[ { src?, alt, caption } ], cards?:[ { title, text } ], sources?:{ facts, media?:[string] } }
+//   src is relative to games/<slug>/ (a figure without one is just its caption); caption, text, facts and media may contain links.
+function aboutSection(slug, about) {
+  const base = new URL(`games/${slug}/`, BASE);
+  return el('section', { class: 'about' },
+    el('h2', { class: 'about-title' }, about.title),
+    about.figures?.length ? el('div', { class: 'about-figs' }, about.figures.map(f => el('figure', {},
+      f.src ? el('img', { src: new URL(f.src, base).href, alt: f.alt || '', loading: 'lazy' }) : null,
+      el('figcaption', { html: f.caption })))) : null,
+    about.cards?.length ? el('div', { class: 'about-cards' }, about.cards.map(c => el('div', {},
+      el('h3', {}, c.title), el('p', { html: c.text })))) : null,
+    about.sources ? el('div', { class: 'about-sources' },
+      el('p', { html: about.sources.facts }),
+      about.sources.media?.length ? el('ul', {}, about.sources.media.map(m => el('li', { html: m }))) : null) : null);
 }
 
 function resultScreen({ game, score, total, line }) {
