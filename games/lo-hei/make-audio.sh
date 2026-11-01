@@ -9,7 +9,6 @@ for p in "OPEN 恭喜发财！万事如意" "NNYY 年年有余" "DJDL 大吉大�
   say -v Tingting -r 175 -o "$1.aiff" "$2！"
   ffmpeg -loglevel error -y -i "$1.aiff" -af "$FX" -ar 48000 "$1.wav"
 done
-# The toss clip (huat) is a recording from djbeng.com, not generated here.
 for f in OPEN NNYY DJDL ZCJB YBWL HYDT QCYZ FSSQ JYMW SYXL MDHJ; do
   ffmpeg -loglevel error -y -i $f.wav -c:a libopus -b:a 64k "$OUT/$f.ogg"
   ffmpeg -loglevel error -y -i $f.wav -c:a aac -b:a 96k "$OUT/$f.m4a"

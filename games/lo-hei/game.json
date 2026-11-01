@@ -4,7 +4,7 @@
   "mechanic": "toss",
   "blurb": "Add the yusheng ingredients in order as each phrase is called, then toss it high.",
   "fact": "Yusheng plays on sounds: 鱼 (fish) sounds like 余 (abundance), and 生 means both ‘raw’ and ‘life’. So the name itself wishes you abundance and long life.",
-  "credit": "Source: <a href=\"https://www.roots.gov.sg/stories-landing/stories/lohei\">Lohei, Our Way: Celebrating Togetherness, Tossing Up Abundance</a> and <a href=\"https://www.roots.gov.sg/ich-landing/ich/yusheng-and-lo-hei\">Yusheng and Lo Hei</a> (ICH-096), <a href=\"https://www.roots.gov.sg\">Roots.sg</a>, National Heritage Board. Ingredient illustrations are original AI-generated artwork. Phrase audio is computer-generated; the \"Huat ah!\" recording is from <a href=\"https://djbeng.com/lohei.html\">djbeng.com</a>.",
+  "credit": "Source: <a href=\"https://www.roots.gov.sg/stories-landing/stories/lohei\">Lohei, Our Way: Celebrating Togetherness, Tossing Up Abundance</a> and <a href=\"https://www.roots.gov.sg/ich-landing/ich/yusheng-and-lo-hei\">Yusheng and Lo Hei</a> (ICH-096), <a href=\"https://www.roots.gov.sg\">Roots.sg</a>, National Heritage Board. Ingredient illustrations are original AI-generated artwork. Phrase audio is computer-generated.",
   "content": {
     "inOrder": true,
     "opening": {
@@ -120,7 +120,6 @@
     "tossCall": "Huat ah!",
     "tossPrompt": "Everyone stands, chopsticks in hand. Flick up from the plate: the higher the toss, the better your fortune for the year.",
     "tosses": 3,
-    "tossSound": "huat",
     "mixedImage": "mixed-yusheng"
   },
   "assets": {
@@ -156,9 +155,6 @@
     },
     "MDHJ": {
       "audio": "audio/MDHJ"
-    },
-    "huat": {
-      "audio": "audio/huat"
     },
     "fish": {
       "image": "images/fish.webp"
@@ -245,7 +241,7 @@
       "media": [
         "Photos: National Heritage Board, from <a href=\"https://www.roots.gov.sg/stories-landing/stories/lohei\" target=\"_blank\" rel=\"noopener\">Lohei, Our Way</a> and <a href=\"https://www.roots.gov.sg/ich-landing/ich/yusheng-and-lo-hei\" target=\"_blank\" rel=\"noopener\">Yusheng and Lo Hei (ICH-096)</a> on Roots.sg, resized for this page.",
         "Ingredient illustrations: original AI-generated artwork.",
-        "Phrase audio: computer-generated (text-to-speech). “Huat ah!” recording: <a href=\"https://djbeng.com/lohei.html\" target=\"_blank\" rel=\"noopener\">djbeng.com</a>."
+        "Phrase audio: computer-generated (text-to-speech)."
       ]
     }
   }

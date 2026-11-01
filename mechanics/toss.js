@@ -1,8 +1,9 @@
 // toss — a phrase is called, drag the ingredient it goes with onto the plate, then flick up to toss.
-// content: { inOrder?, opening?:{ saying, pinyin?, wish, phrase? }, tossCall?, tossPrompt, tosses?, tossSound?, mixedImage?,
+// content: { inOrder?, opening?:{ saying, pinyin?, wish, phrase? }, tossCall?, tossPrompt, tosses?, mixedImage?,
 //            ingredients:[ { name, wish, colour, image?, tossable?, saying?, pinyin?, phrase?, note? } ] }
 //   inOrder calls the ingredients in the order listed; otherwise they're shuffled.
-//   opening is a greeting step before the first ingredient. phrase and tossSound name audio assets.
+//   opening is a greeting step before the first ingredient. phrase names an audio asset.
+//   tossCall pops up at random spots over the plate on every toss.
 //   saying and pinyin are the phrase as written and spoken; note is shown once the ingredient is on.
 //   image names a preloaded image asset. tossable:false keeps condiment dishes out of the airborne bits.
 export const meta = { id: 'toss', name: 'Add and toss' };
@@ -184,9 +185,24 @@ export async function mount({ root, content, api }) {
       launch(Math.min(1, speed / FAST_FLICK));
     });
 
+    // The call pops up a few times at random spots, more often for a higher toss.
+    // Each pop gets its own band across the stage, in shuffled order, so they don't pile up.
+    const shoutOut = power => {
+      const count = 2 + Math.round(power * 3);
+      api.shuffle([...Array(count).keys()]).forEach((band, n) => {
+        setTimeout(() => {
+          const left = 15 + (band + 0.2 + Math.random() * 0.6) * 70 / count;
+          const pop = api.el('span', { class: 'toss-shout', 'aria-hidden': 'true',
+            style: `left:${left}%;top:${8 + Math.random() * 50}%;--tilt:${Math.round((Math.random() - 0.5) * 24)}deg` }, shout);
+          stage.append(pop);
+          pop.addEventListener('animationend', () => pop.remove());
+        }, n * 180 + Math.random() * 120);
+      });
+    };
+
     const launch = power => {
       flying = true;
-      sound(content.tossSound);
+      shoutOut(power);
       const w = canvas.width = stage.clientWidth * devicePixelRatio;
       const h = canvas.height = stage.clientHeight * devicePixelRatio;
       g.setTransform(devicePixelRatio, 0, 0, devicePixelRatio, 0, 0);
