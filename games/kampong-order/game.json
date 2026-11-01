@@ -1,0 +1,18 @@
+{
+  "title": "Before the Flats",
+  "kicker": "Timeline",
+  "blurb": "Five moments. Earliest first.",
+  "mechanic": "order",
+  "fact": "This one is scheduled ahead — it sits in the buffer until its publish date.",
+  "credit": "Original text. Dates to be checked by a curator before publish.",
+  "content": {
+    "prompt": "Put these in order, earliest first.",
+    "items": [
+      { "label": "PLACEHOLDER — event A", "rank": 1, "note": "Replace before publish." },
+      { "label": "PLACEHOLDER — event B", "rank": 2 },
+      { "label": "PLACEHOLDER — event C", "rank": 3 },
+      { "label": "PLACEHOLDER — event D", "rank": 4 },
+      { "label": "PLACEHOLDER — event E", "rank": 5 }
+    ]
+  }
+}

@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Heritage Games</title>
+<link rel="stylesheet" href="shell/tokens.css">
+<link rel="stylesheet" href="shell/shell.css">
+</head>
+<body>
+<div class="wrap">
+  <nav class="topbar"><a href="index.html">&larr; All games</a><span class="spacer"></span></nav>
+  <header id="head"></header>
+  <main id="root"></main>
+</div>
+<script type="module">
+import { run, el } from './shell/shell.js';
+const slug = new URLSearchParams(location.search).get('g');
+const root = document.getElementById('root');
+const head = document.getElementById('head');
+if (!slug) {
+  location.replace('index.html');
+} else {
+  run({ slug, root, head }).catch(err => {
+    root.append(el('div', { class: 'card stage' },
+      el('h2', {}, 'Could not load that game'),
+      el('p', { class: 'muted' }, String(err.message || err)),
+      el('p', { class: 'muted' }, 'If you opened this file directly, serve the folder instead: ./serve.sh')
+    ));
+  });
+}
+</script>
+</body>
+</html>

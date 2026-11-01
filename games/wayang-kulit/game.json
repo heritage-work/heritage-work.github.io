@@ -1,0 +1,52 @@
+{
+  "title": "Behind the Screen",
+  "kicker": "Wayang kulit",
+  "mechanic": "pick",
+  "blurb": "Shadow puppets, one puppet master. Four questions.",
+  "fact": "The dalang does it all: moves every puppet, voices every character, leads the singers and conducts the gamelan, while keeping sound effects with a mallet and his foot.",
+  "credit": "Facts from the National Heritage Board's <a href=\"https://www.roots.gov.sg/ich-landing/ich/wayang-kulit\">Roots entry on wayang kulit</a>. Text and art are original.",
+  "content": {
+    "questions": [
+      {
+        "prompt": "Who controls the puppets in wayang kulit?",
+        "options": [
+          "The dalang",
+          "The pesindhen",
+          "The gamelan leader"
+        ],
+        "answer": 0,
+        "note": "The dalang, the puppet master, also voices the characters and conducts the orchestra."
+      },
+      {
+        "prompt": "What holds the puppets upright while they wait?",
+        "options": [
+          "A wooden rack",
+          "A banana trunk",
+          "A sand tray"
+        ],
+        "answer": 1,
+        "note": "Their pointed ends are staked into a banana trunk, with good characters on the dalang's left and bad on his right."
+      },
+      {
+        "prompt": "Some people sit behind the screen instead of in front. What is that seat linked to?",
+        "options": [
+          "The musicians",
+          "The gods",
+          "The puppet makers"
+        ],
+        "answer": 1,
+        "note": "From behind you see the puppets themselves, a position traditionally associated with the gods."
+      },
+      {
+        "prompt": "Which local hero appears in wayang kulit in Singapore?",
+        "options": [
+          "Hang Tuah",
+          "Admiral Zheng He",
+          "Sir Stamford Raffles"
+        ],
+        "answer": 0,
+        "note": "Local versions feature figures like Sang Nila Utama, Hang Nadim and Hang Tuah, alongside the Ramayana and Mahabharata."
+      }
+    ]
+  }
+}

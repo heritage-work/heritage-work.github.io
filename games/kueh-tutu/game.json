@@ -1,0 +1,38 @@
+{
+  "title": "Steam a Kueh Tutu",
+  "kicker": "Kueh tutu",
+  "mechanic": "order",
+  "blurb": "Six steps from rice grain to pandan leaf.",
+  "fact": "Kueh tutu is said to have been created in Singapore in the 1930s by Mr Tan Eng Huat. Its flower shape is believed to come from the chrysanthemum.",
+  "credit": "Facts from the National Heritage Board's <a href=\"https://www.roots.gov.sg/ich-landing/ich/kueh-tutu\">Roots entry on kueh tutu</a>. Text and art are original.",
+  "content": {
+    "prompt": "Put the steps in order.",
+    "items": [
+      {
+        "label": "Pound and sift rice grains into light flour",
+        "rank": 1
+      },
+      {
+        "label": "Fill the flower-shaped mould with rice flour",
+        "rank": 2
+      },
+      {
+        "label": "Scoop out a gap in the middle",
+        "rank": 3
+      },
+      {
+        "label": "Add ground peanuts or shredded coconut",
+        "rank": 4
+      },
+      {
+        "label": "Cover with more flour and a muslin cloth, then steam",
+        "rank": 5
+      },
+      {
+        "label": "Serve on a square of pandan leaf",
+        "rank": 6,
+        "note": "The pandan adds fragrance."
+      }
+    ]
+  }
+}

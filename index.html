@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Heritage Games</title>
+<link rel="stylesheet" href="shell/tokens.css">
+<link rel="stylesheet" href="shell/shell.css">
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="kicker">A new one every other Thursday</div>
+    <h1>Heritage Games</h1>
+    <p class="muted">Small games made from Singapore heritage. Two minutes each.</p>
+  </header>
+  <main id="list" class="grid"></main>
+</div>
+<script type="module">
+import { loadManifest, el, recall } from './shell/shell.js';
+const list = document.getElementById('list');
+loadManifest().then(m => {
+  if (!m.games.length) { list.append(el('p', { class: 'muted' }, 'Nothing published yet.')); return; }
+  for (const g of m.games) {
+    const played = recall(`done:${g.slug}`);
+    // A flagship lives in its own project, so its entry carries an href instead of a game.json.
+    list.append(el('a', { class: 'card tile', href: g.href || `play.html?g=${encodeURIComponent(g.slug)}` },
+      el('div', { class: 'when' }, g.publish || ''),
+      el('h2', {}, g.title),
+      el('p', { class: 'muted', style: 'margin:.2em 0 .6em' }, g.blurb || ''),
+      el('span', { class: 'tag' }, g.tag || g.mechanic),
+      played ? el('span', { class: 'when', style: 'margin-left:8px' },
+        `played — ${played.score}/${played.total}`) : null
+    ));
+  }
+}).catch(err => {
+  list.append(el('div', { class: 'card stage' },
+    el('h2', {}, 'Could not load the manifest'),
+    el('p', { class: 'muted' }, String(err.message || err)),
+    el('p', { class: 'muted' }, 'Serve the folder rather than opening the file: ./serve.sh')));
+});
+</script>
+</body>
+</html>

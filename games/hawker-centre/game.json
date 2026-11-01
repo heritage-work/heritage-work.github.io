@@ -1,0 +1,52 @@
+{
+  "title": "Community Dining Room",
+  "kicker": "Hawker culture",
+  "mechanic": "pick",
+  "blurb": "Four questions about Singapore's hawker centres.",
+  "fact": "Hawker centres are Singapore's community dining rooms: strangers share tables regardless of religion or diet.",
+  "credit": "Facts from the National Heritage Board's <a href=\"https://www.roots.gov.sg/ich-landing/ich/hawker-culture\">Roots entry on hawker culture</a>. Text and art are original.",
+  "content": {
+    "questions": [
+      {
+        "prompt": "Roughly how many hawker centres are there in Singapore?",
+        "options": [
+          "About 30",
+          "Over 110",
+          "Over 500"
+        ],
+        "answer": 1,
+        "note": "Over 110, most of them in the neighbourhood centres of public housing estates."
+      },
+      {
+        "prompt": "Roti prata is a…",
+        "options": [
+          "Spicy soup noodle",
+          "Flat bread with stretched dough and ghee",
+          "Local salad"
+        ],
+        "answer": 1,
+        "note": "Stretched dough and ghee. The soup noodle is laksa and the salad is rojak."
+      },
+      {
+        "prompt": "What is char kway teow?",
+        "options": [
+          "Stir-fried flat noodles",
+          "Skewered meat",
+          "Steamed rice cake"
+        ],
+        "answer": 0,
+        "note": "Stir-fried flat noodles. Skewered meat is satay."
+      },
+      {
+        "prompt": "Who built Singapore's first hawker centres?",
+        "options": [
+          "Private developers alone",
+          "Hawkers and communities, with government help",
+          "Foreign food chains"
+        ],
+        "answer": 1,
+        "note": "In the early years of independence, hawkers and communities worked with the government, giving hawkers steady livelihoods and everyone affordable meals."
+      }
+    ]
+  }
+}

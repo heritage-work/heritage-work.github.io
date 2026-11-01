@@ -1,0 +1,30 @@
+{
+  "title": "North or South?",
+  "kicker": "Lion dance",
+  "blurb": "Two lions, two traditions. Three questions.",
+  "mechanic": "pick",
+  "fact": "The southern lion is the one you'll almost always see in Singapore — stylised head, decorated cape, and a drum that tells you what the lion is feeling.",
+  "credit": "Background from the National Heritage Board's Roots ICH entry on lion dance. Art is original.",
+  "content": {
+    "questions": [
+      {
+        "prompt": "Which lion turns up at most Singapore shop openings?",
+        "options": ["The northern lion", "The southern lion"],
+        "answer": 1,
+        "note": "The southern lion is far more common here — stylised head, decorated cape."
+      },
+      {
+        "prompt": "How many instruments drive the performance?",
+        "options": ["One drum", "Drum and gong", "Drum, gong and cymbals"],
+        "answer": 2,
+        "note": "Drum, gong and cymbals together. The drum leads; the other two answer it."
+      },
+      {
+        "prompt": "Roughly how far back does lion dance go?",
+        "options": ["About 200 years", "About 600 years", "More than 1,500 years"],
+        "answer": 2,
+        "note": "More than 1,500 years, with roots in Chinese martial performance."
+      }
+    ]
+  }
+}

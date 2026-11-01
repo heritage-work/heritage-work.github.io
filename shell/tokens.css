@@ -1,0 +1,28 @@
+:root{
+  --ink:#1a1512;
+  --ink-soft:#5c5248;
+  --paper:#f4efe6;
+  --card:#fffdf8;
+  --line:#ddd2c0;
+  --accent:#b3321f;
+  --accent-soft:#f3d9d3;
+  --gold:#c8962c;
+  --ok:#2f7a4f;
+  --bad:#b3321f;
+  --r:14px;
+  --shadow:0 1px 2px rgba(26,21,18,.06), 0 8px 24px rgba(26,21,18,.07);
+  --fs-display:clamp(1.6rem,4.5vw,2.3rem);
+  --font:ui-serif,"Iowan Old Style","Source Serif 4",Georgia,serif;
+  --font-ui:ui-sans-serif,-apple-system,"Inter",system-ui,sans-serif;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --ink:#f0e9df; --ink-soft:#a99e90; --paper:#16130f; --card:#211c17;
+    --line:#39312a; --accent:#e4654c; --accent-soft:#3a211c; --gold:#d9ab4a;
+    --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 24px rgba(0,0,0,.35);
+  }
+}
+:root[data-theme="dark"]{
+  --ink:#f0e9df; --ink-soft:#a99e90; --paper:#16130f; --card:#211c17;
+  --line:#39312a; --accent:#e4654c; --accent-soft:#3a211c; --gold:#d9ab4a;
+}

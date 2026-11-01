@@ -1,0 +1,37 @@
+{
+  "title": "Name That Kick",
+  "kicker": "Sepak takraw",
+  "mechanic": "match",
+  "blurb": "No hands, three touches, a rattan ball. Learn the Malay names.",
+  "fact": "In the 1950s sepak raga was played across Malay villages like Kampong Eunos and Geylang Serai. In HDB estates, residents added takraw markings to badminton courts.",
+  "credit": "Facts from the National Heritage Board's <a href=\"https://www.roots.gov.sg/ich-landing/ich/sepak-takraw\">Roots entry on sepak takraw</a>. Text and art are original.",
+  "content": {
+    "prompt": "Tap a Malay term, then tap what it means.",
+    "pairs": [
+      {
+        "a": "Tekong",
+        "b": "The server"
+      },
+      {
+        "a": "Apek kiri",
+        "b": "The striker who spikes"
+      },
+      {
+        "a": "Regu",
+        "b": "A team of three"
+      },
+      {
+        "a": "Sepak silang",
+        "b": "Cross-court kick"
+      },
+      {
+        "a": "Gunting",
+        "b": "Scissors kick"
+      },
+      {
+        "a": "Ribas pari",
+        "b": "Flying volley"
+      }
+    ]
+  }
+}

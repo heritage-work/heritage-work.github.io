@@ -1,0 +1,77 @@
+{
+  "title": "Heritage Games",
+  "cadence": "fortnightly",
+  "games": [
+    {
+      "slug": "awaken-the-lion",
+      "title": "Awaken the Lion",
+      "blurb": "Drum, crash and gong along with a National Museum of Singapore lion dance, then earn your troupe rank.",
+      "href": "https://heritage-work.github.io/awaken-the-lion/",
+      "tag": "Flagship",
+      "publish": "2026-10-31"
+    },
+    {
+      "slug": "lion-dance-tells",
+      "title": "North or South?",
+      "blurb": "Two lions, two traditions. Tell them apart.",
+      "mechanic": "pick",
+      "publish": "2026-10-30"
+    },
+    {
+      "slug": "kueh-match",
+      "title": "Name That Kueh",
+      "blurb": "Match the kueh to what it's actually made of.",
+      "mechanic": "match",
+      "publish": "2026-10-16"
+    },
+    {
+      "slug": "kampong-order",
+      "title": "Before the Flats",
+      "blurb": "Put five Singapore moments in order.",
+      "mechanic": "order",
+      "publish": "2099-01-01"
+    },
+    {
+      "slug": "rangoli",
+      "title": "One Unbroken Line",
+      "blurb": "Trace four rangoli designs without lifting your finger.",
+      "mechanic": "trace",
+      "publish": "2099-01-01"
+    },
+    {
+      "slug": "lo-hei",
+      "title": "Toss It High",
+      "blurb": "Every yusheng ingredient carries a wish. Match them up.",
+      "mechanic": "match",
+      "publish": "2099-01-01"
+    },
+    {
+      "slug": "kueh-tutu",
+      "title": "Steam a Kueh Tutu",
+      "blurb": "Six steps from rice grain to pandan leaf.",
+      "mechanic": "order",
+      "publish": "2099-01-01"
+    },
+    {
+      "slug": "wayang-kulit",
+      "title": "Behind the Screen",
+      "blurb": "Shadow puppets, one puppet master. Four questions.",
+      "mechanic": "pick",
+      "publish": "2099-01-01"
+    },
+    {
+      "slug": "sepak-takraw",
+      "title": "Name That Kick",
+      "blurb": "No hands, three touches, a rattan ball. Learn the Malay names.",
+      "mechanic": "match",
+      "publish": "2099-01-01"
+    },
+    {
+      "slug": "hawker-centre",
+      "title": "Community Dining Room",
+      "blurb": "Four questions about Singapore's hawker centres.",
+      "mechanic": "pick",
+      "publish": "2099-01-01"
+    }
+  ]
+}

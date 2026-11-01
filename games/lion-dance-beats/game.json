@@ -1,0 +1,538 @@
+{
+  "title": "Keep the Beat",
+  "kicker": "Lion dance",
+  "blurb": "Drum, gong, cymbals. Three lanes, one pattern.",
+  "mechanic": "beats",
+  "fact": "The drum leads and the gong and cymbals answer. The pattern isn't decoration — three-star beats go with the lion investigating close by, seven-star with a long walk. The rhythm tells you what the lion is doing.",
+  "credit": "Percussion samples recorded for this project. The pattern is a simplified teaching reduction of the three-star (三星) structure — a two-beat cell whose first beat splits in two — not a transcription of any troupe's arrangement. NOT CLEARED FOR PUBLISH: needs a practitioner pass.",
+  "assets": {
+    "drum": {
+      "audio": "audio/hit-drum"
+    },
+    "gong": {
+      "audio": "audio/hit-gong"
+    },
+    "cymbal": {
+      "audio": "audio/hit-cymbal"
+    },
+    "performance": {
+      "audio": "audio/performance"
+    }
+  },
+  "content": {
+    "leadIn": 2.5,
+    "approach": 1.8,
+    "window": 0.13,
+    "lanes": [
+      {
+        "key": "drum",
+        "label": "Drum",
+        "asset": "drum"
+      },
+      {
+        "key": "gong",
+        "label": "Gong",
+        "asset": "gong"
+      },
+      {
+        "key": "cymbal",
+        "label": "Cymbal",
+        "asset": "cymbal"
+      }
+    ],
+    "notes": [
+      {
+        "t": 1.0,
+        "lane": 0
+      },
+      {
+        "t": 1.0,
+        "lane": 1
+      },
+      {
+        "t": 1.326,
+        "lane": 0
+      },
+      {
+        "t": 1.326,
+        "lane": 2
+      },
+      {
+        "t": 1.652,
+        "lane": 0
+      },
+      {
+        "t": 1.652,
+        "lane": 2
+      },
+      {
+        "t": 2.304,
+        "lane": 0
+      },
+      {
+        "t": 2.304,
+        "lane": 1
+      },
+      {
+        "t": 2.63,
+        "lane": 0
+      },
+      {
+        "t": 2.63,
+        "lane": 2
+      },
+      {
+        "t": 2.957,
+        "lane": 0
+      },
+      {
+        "t": 2.957,
+        "lane": 2
+      },
+      {
+        "t": 3.609,
+        "lane": 0
+      },
+      {
+        "t": 3.609,
+        "lane": 1
+      },
+      {
+        "t": 3.935,
+        "lane": 0
+      },
+      {
+        "t": 3.935,
+        "lane": 2
+      },
+      {
+        "t": 4.261,
+        "lane": 0
+      },
+      {
+        "t": 4.261,
+        "lane": 2
+      },
+      {
+        "t": 4.913,
+        "lane": 0
+      },
+      {
+        "t": 4.913,
+        "lane": 1
+      },
+      {
+        "t": 5.239,
+        "lane": 0
+      },
+      {
+        "t": 5.239,
+        "lane": 2
+      },
+      {
+        "t": 5.565,
+        "lane": 0
+      },
+      {
+        "t": 5.565,
+        "lane": 2
+      },
+      {
+        "t": 6.217,
+        "lane": 0
+      },
+      {
+        "t": 6.217,
+        "lane": 1
+      },
+      {
+        "t": 6.543,
+        "lane": 0
+      },
+      {
+        "t": 6.543,
+        "lane": 2
+      },
+      {
+        "t": 6.87,
+        "lane": 0
+      },
+      {
+        "t": 6.87,
+        "lane": 2
+      },
+      {
+        "t": 7.522,
+        "lane": 0
+      },
+      {
+        "t": 7.522,
+        "lane": 1
+      },
+      {
+        "t": 7.848,
+        "lane": 0
+      },
+      {
+        "t": 7.848,
+        "lane": 2
+      },
+      {
+        "t": 8.174,
+        "lane": 0
+      },
+      {
+        "t": 8.174,
+        "lane": 2
+      },
+      {
+        "t": 8.826,
+        "lane": 0
+      },
+      {
+        "t": 8.826,
+        "lane": 1
+      },
+      {
+        "t": 9.152,
+        "lane": 0
+      },
+      {
+        "t": 9.152,
+        "lane": 2
+      },
+      {
+        "t": 9.478,
+        "lane": 0
+      },
+      {
+        "t": 9.478,
+        "lane": 2
+      },
+      {
+        "t": 10.13,
+        "lane": 0
+      },
+      {
+        "t": 10.13,
+        "lane": 1
+      },
+      {
+        "t": 10.457,
+        "lane": 0
+      },
+      {
+        "t": 10.457,
+        "lane": 2
+      },
+      {
+        "t": 10.783,
+        "lane": 0
+      },
+      {
+        "t": 10.783,
+        "lane": 2
+      },
+      {
+        "t": 11.435,
+        "lane": 0
+      },
+      {
+        "t": 11.435,
+        "lane": 1
+      },
+      {
+        "t": 11.761,
+        "lane": 0
+      },
+      {
+        "t": 11.761,
+        "lane": 2
+      },
+      {
+        "t": 12.087,
+        "lane": 0
+      },
+      {
+        "t": 12.087,
+        "lane": 2
+      },
+      {
+        "t": 12.739,
+        "lane": 0
+      },
+      {
+        "t": 12.739,
+        "lane": 1
+      },
+      {
+        "t": 13.065,
+        "lane": 0
+      },
+      {
+        "t": 13.065,
+        "lane": 2
+      },
+      {
+        "t": 13.391,
+        "lane": 0
+      },
+      {
+        "t": 13.391,
+        "lane": 2
+      },
+      {
+        "t": 14.043,
+        "lane": 0
+      },
+      {
+        "t": 14.043,
+        "lane": 1
+      },
+      {
+        "t": 14.37,
+        "lane": 0
+      },
+      {
+        "t": 14.37,
+        "lane": 2
+      },
+      {
+        "t": 14.696,
+        "lane": 0
+      },
+      {
+        "t": 14.696,
+        "lane": 2
+      },
+      {
+        "t": 15.348,
+        "lane": 0
+      },
+      {
+        "t": 15.348,
+        "lane": 1
+      },
+      {
+        "t": 15.674,
+        "lane": 0
+      },
+      {
+        "t": 15.674,
+        "lane": 2
+      },
+      {
+        "t": 16.0,
+        "lane": 0
+      },
+      {
+        "t": 16.0,
+        "lane": 2
+      },
+      {
+        "t": 16.652,
+        "lane": 0
+      },
+      {
+        "t": 16.652,
+        "lane": 1
+      },
+      {
+        "t": 16.978,
+        "lane": 0
+      },
+      {
+        "t": 16.978,
+        "lane": 2
+      },
+      {
+        "t": 17.304,
+        "lane": 0
+      },
+      {
+        "t": 17.304,
+        "lane": 2
+      },
+      {
+        "t": 17.63,
+        "lane": 0
+      },
+      {
+        "t": 17.63,
+        "lane": 2
+      },
+      {
+        "t": 17.957,
+        "lane": 0
+      },
+      {
+        "t": 17.957,
+        "lane": 1
+      },
+      {
+        "t": 18.283,
+        "lane": 0
+      },
+      {
+        "t": 18.283,
+        "lane": 2
+      },
+      {
+        "t": 18.609,
+        "lane": 0
+      },
+      {
+        "t": 18.609,
+        "lane": 2
+      },
+      {
+        "t": 18.935,
+        "lane": 0
+      },
+      {
+        "t": 18.935,
+        "lane": 2
+      },
+      {
+        "t": 19.261,
+        "lane": 0
+      },
+      {
+        "t": 19.261,
+        "lane": 1
+      },
+      {
+        "t": 19.587,
+        "lane": 0
+      },
+      {
+        "t": 19.587,
+        "lane": 2
+      },
+      {
+        "t": 19.913,
+        "lane": 0
+      },
+      {
+        "t": 19.913,
+        "lane": 2
+      },
+      {
+        "t": 20.239,
+        "lane": 0
+      },
+      {
+        "t": 20.239,
+        "lane": 2
+      },
+      {
+        "t": 20.565,
+        "lane": 0
+      },
+      {
+        "t": 20.565,
+        "lane": 1
+      },
+      {
+        "t": 20.891,
+        "lane": 0
+      },
+      {
+        "t": 20.891,
+        "lane": 2
+      },
+      {
+        "t": 21.217,
+        "lane": 0
+      },
+      {
+        "t": 21.217,
+        "lane": 2
+      },
+      {
+        "t": 21.543,
+        "lane": 0
+      },
+      {
+        "t": 21.543,
+        "lane": 2
+      },
+      {
+        "t": 21.87,
+        "lane": 0
+      },
+      {
+        "t": 21.87,
+        "lane": 1
+      },
+      {
+        "t": 22.196,
+        "lane": 0
+      },
+      {
+        "t": 22.196,
+        "lane": 2
+      },
+      {
+        "t": 22.522,
+        "lane": 0
+      },
+      {
+        "t": 22.522,
+        "lane": 2
+      },
+      {
+        "t": 22.848,
+        "lane": 0
+      },
+      {
+        "t": 22.848,
+        "lane": 2
+      },
+      {
+        "t": 23.174,
+        "lane": 0
+      },
+      {
+        "t": 23.174,
+        "lane": 1
+      },
+      {
+        "t": 23.5,
+        "lane": 0
+      },
+      {
+        "t": 23.5,
+        "lane": 2
+      },
+      {
+        "t": 23.826,
+        "lane": 0
+      },
+      {
+        "t": 23.826,
+        "lane": 2
+      },
+      {
+        "t": 24.152,
+        "lane": 0
+      },
+      {
+        "t": 24.152,
+        "lane": 2
+      },
+      {
+        "t": 24.478,
+        "lane": 0
+      },
+      {
+        "t": 24.478,
+        "lane": 1
+      },
+      {
+        "t": 24.478,
+        "lane": 2
+      }
+    ]
+  }
+}

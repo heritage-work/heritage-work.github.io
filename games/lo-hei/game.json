@@ -1,0 +1,37 @@
+{
+  "title": "Toss It High",
+  "kicker": "Yusheng and lo hei",
+  "mechanic": "match",
+  "blurb": "Every yusheng ingredient carries a wish. Match them up.",
+  "fact": "Yu (fish) sounds like the word for abundance, and sheng (raw) also means growth, so the dish's name is itself a wish. The higher you toss, the greater your fortune.",
+  "credit": "Facts from the National Heritage Board's <a href=\"https://www.roots.gov.sg/ich-landing/ich/yusheng-and-lo-hei\">Roots entry on yusheng and lo hei</a>. Text and art are original.",
+  "content": {
+    "prompt": "Tap an ingredient, then tap the wish it carries.",
+    "pairs": [
+      {
+        "a": "Fish slices",
+        "b": "Abundance all year"
+      },
+      {
+        "a": "Pomelo and carrot",
+        "b": "Good luck and prosperity"
+      },
+      {
+        "a": "Peanuts and crisps",
+        "b": "Great wealth"
+      },
+      {
+        "a": "Green radish",
+        "b": "Youthful beauty"
+      },
+      {
+        "a": "Honey",
+        "b": "Sweetness and bliss"
+      },
+      {
+        "a": "Lime and five-spice",
+        "b": "Blessings for everyone at the table"
+      }
+    ]
+  }
+}

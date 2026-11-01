@@ -1,0 +1,17 @@
+{
+  "title": "Name That Kueh",
+  "kicker": "Food",
+  "blurb": "Match each kueh to the thing that defines it.",
+  "mechanic": "match",
+  "fact": "Most traditional kueh lean on three things: rice flour, coconut, and palm sugar. The variation is in texture, not ingredients.",
+  "credit": "Original artwork and text.",
+  "content": {
+    "prompt": "Tap a kueh, then tap what defines it.",
+    "pairs": [
+      { "a": "Kueh lapis", "b": "Steamed in layers" },
+      { "a": "Ondeh-ondeh", "b": "Bursts with gula melaka" },
+      { "a": "Kueh salat", "b": "Glutinous rice under custard" },
+      { "a": "Ang ku kueh", "b": "Pressed in a tortoise mould" }
+    ]
+  }
+}
