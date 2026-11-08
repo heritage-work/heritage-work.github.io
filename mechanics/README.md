@@ -12,7 +12,8 @@ export async function mount({ root, content, game, api }) { ... }
 - `root`    — the stage element. Render into it however you like.
 - `content` — whatever that mechanic's schema says, straight from game.json.
 - `game`    — the whole game.json (title, fact, credit...).
-- `api`     — `{ el, shuffle, setProgress(done,total), finish({score,total,line}) }`
+- `api`     — `{ el, shuffle, setProgress(done,total), finish({score,total,line,result}) }`
+  (`result` replaces the score on the result screen, e.g. a personality name)
 
 The only hard rule: call `api.finish()` exactly once. The shell owns the
 result screen, the share button and the credit line, so a mechanic never

@@ -27,6 +27,9 @@ mechanics/
   match.js          tap the pairs
   beats.js          three-lane rhythm, needs audio assets
   trace.js          draw a pattern in one unbroken line (rangoli)
+  tray.js           fill a tray, get a personality (nasi ambeng)
+  berkat.js         reserve berkat, then tap a dish and a guest to share (nasi ambeng)
+  spice.js          time management: scoop, grind and serve blends to a queue (spice counter)
 games/
   manifest.json     what exists, and when it publishes
   <slug>/game.json  one game's content
@@ -106,12 +109,17 @@ See `mechanics/README.md` for the contract.
 
 ## Still to do
 
-- Drafts dated `2099-01-01` are waiting for a review: `rangoli`, `lo-hei`,
-  `kueh-tutu`, `wayang-kulit`, `sepak-takraw`, `hawker-centre`. Each is drawn
+- Drafts dated `2099-01-01` are waiting for a review: `kueh-tutu`,
+  `sepak-takraw`, `hawker-centre`, `five-stones`. Each is drawn
   from its Roots ICH entry (linked in its credit). Check the facts, then give
   each a real publish date. Until then, play one at `play.html?g=<slug>`.
 - `games/kampong-order/` is placeholder content, so it's parked at
   `2099-01-01` too. Needs real dates and a curator pass before it gets a date.
 - Open graph images per game for sharing.
+- `games/spice-counter/` takes its goals from the simulated players in
+  `tests/spice.test.mjs`, so rerun them after changing pace.
+- `games/nasi-ambeng-personality/` is the parked personality-test take on nasi
+  ambeng (mechanic `tray`). Out of the manifest; play it at
+  `play.html?g=nasi-ambeng-personality`.
 - `games/lion-dance-beats/` is retired: Awaken the Lion (the flagship) has the
   real NMS transcription. The folder is still here, out of the manifest.

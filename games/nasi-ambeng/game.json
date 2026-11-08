@@ -1,0 +1,235 @@
+{
+  "title": "Leave Some for Berkat",
+  "kicker": "Nasi ambeng",
+  "mechanic": "berkat",
+  "music": "berkat",
+  "assets": {
+    "rendang": {
+      "image": "images/rendang.webp"
+    },
+    "sambal-goreng": {
+      "image": "images/sambal-goreng.webp"
+    },
+    "tempe-goreng": {
+      "image": "images/tempe-goreng.webp"
+    },
+    "urap": {
+      "image": "images/urap.webp"
+    },
+    "serunding": {
+      "image": "images/serunding.webp"
+    },
+    "guest-nenek": {
+      "image": "images/nenek.webp"
+    },
+    "guest-pak-cik": {
+      "image": "images/pak-cik.webp"
+    },
+    "guest-adik": {
+      "image": "images/adik.webp"
+    },
+    "guest-mak-cik": {
+      "image": "images/mak-cik.webp"
+    }
+  },
+  "blurb": "One tray, four guests, and food to take home. Tap a dish, then a guest to share it.",
+  "fact": "A nasi ambeng tray was never meant to be finished. Guests left food on it to share out and take home to their families, as nasi berkat: food blessed by the host.",
+  "credit": "Source: <a href=\"https://www.roots.gov.sg/stories-landing/stories/nasi-ambeng/nasi-ambeng\">Nasi Ambeng</a> by Syafiq Moklas (NTU History Programme), <a href=\"https://www.roots.gov.sg\">Roots.sg</a>, National Heritage Board. Guests, portions and points are made up for the game. Food and character illustrations generated with OpenAI.",
+  "content": {
+    "rules": {
+      "portions": 4,
+      "rounds": 4,
+      "packet": 2,
+      "need": 3
+    },
+    "guests": [
+      {
+        "name": "Nenek",
+        "favorite": "rendang",
+        "request": "I’ve been looking forward to the rendang!",
+        "thanks": "Just what I was hoping for. Thank you!",
+        "substitute": "That looks lovely too. Thank you!",
+        "portrait": "guest-nenek"
+      },
+      {
+        "name": "Pak Cik",
+        "favorite": "sambal-goreng",
+        "request": "A little sambal goreng for me?",
+        "thanks": "That’s my favourite part of the tray!",
+        "substitute": "A good swap. Thank you!",
+        "portrait": "guest-pak-cik"
+      },
+      {
+        "name": "Adik",
+        "favorite": "tempe-goreng",
+        "request": "Something crispy, please!",
+        "thanks": "Crispy tempe! Yes, please.",
+        "substitute": "Ooh, I’ll try that!",
+        "portrait": "guest-adik"
+      },
+      {
+        "name": "Mak Cik",
+        "favorite": "urap",
+        "request": "I’d love some urap.",
+        "thanks": "Lovely—some greens for me!",
+        "substitute": "That sounds good too. Thank you!",
+        "portrait": "guest-mak-cik"
+      }
+    ],
+    "dishes": [
+      {
+        "id": "rendang",
+        "asset": "rendang",
+        "name": "Rendang",
+        "look": "rendang",
+        "note": "Beef or chicken, slow-cooked until the gravy clings.",
+        "popularity": 3,
+        "info": {
+          "subtitle": "Slow-cooked meat, coconut and spice",
+          "description": "Slow cooking reduces coconut milk and a spice paste to a coating around tender meat. Beef is a familiar version; chicken rendang also appears on nasi ambeng trays.",
+          "ingredients": "Beef or chicken, coconut milk, chilli and aromatics such as lemongrass and galangal.",
+          "taste": "Rich and aromatic, with tender meat and a thick, concentrated coating.",
+          "spot": "Dark pieces with spice paste clinging to them. Our illustration shows beef rendang.",
+          "story": "Rendang has Minangkabau roots in West Sumatra and is enjoyed across the region.",
+          "sources": [
+            {
+              "title": "Roots.sg — Nasi Ambeng",
+              "url": "https://www.roots.gov.sg/stories-landing/stories/nasi-ambeng/nasi-ambeng"
+            },
+            {
+              "title": "Indonesia Travel — Rendang",
+              "url": "https://www.indonesia.travel/gb/en/travel-ideas/gastronomy/rendang-the-legendary-dish-from-west-sumatra"
+            }
+          ]
+        }
+      },
+      {
+        "id": "sambal-goreng",
+        "asset": "sambal-goreng",
+        "name": "Sambal goreng",
+        "look": "sambal",
+        "note": "Fried chilli paste cooked with tempe and long beans.",
+        "popularity": 2,
+        "info": {
+          "subtitle": "Tempe and beans in a fragrant chilli paste",
+          "description": "A side dish of tempe and long beans brought together with a fried spice paste. Some cooks also add tofu or other ingredients.",
+          "ingredients": "Tempe, long beans and a chilli-based spice paste; additions vary.",
+          "taste": "Savoury and aromatic, with chilli heat and contrasting bean and tempe textures.",
+          "spot": "Green bean pieces and golden cubes among the red-brown seasoning.",
+          "story": "The tempe-and-long-bean version is shown here. Recipes vary between households.",
+          "sources": [
+            {
+              "title": "Roots.sg — Nasi Ambeng",
+              "url": "https://www.roots.gov.sg/stories-landing/stories/nasi-ambeng/nasi-ambeng"
+            },
+            {
+              "title": "Azlin Bloor — Sambal Goreng",
+              "url": "https://www.singaporeanmalaysianrecipes.com/sambal-goreng-recipe-vegan/"
+            }
+          ]
+        }
+      },
+      {
+        "id": "tempe-goreng",
+        "asset": "tempe-goreng",
+        "name": "Tempe goreng",
+        "look": "tempe",
+        "note": "Fried fermented soybean cake, crisp at the edges.",
+        "popularity": 2,
+        "info": {
+          "subtitle": "Golden slices of fermented soybean cake",
+          "description": "Tempe is made from fermented soybeans bound into a firm cake. For tempe goreng, slices are fried until their outside is golden and crisp.",
+          "ingredients": "Soybean tempe, oil and seasoning.",
+          "taste": "A savoury, firm bite with a crisp fried surface.",
+          "spot": "Look for the individual soybean shapes inside each golden slice.",
+          "story": "Tempe also appears in sambal goreng. On this tray it is served as a dish of its own, too.",
+          "sources": [
+            {
+              "title": "Roots.sg — Nasi Ambeng",
+              "url": "https://www.roots.gov.sg/stories-landing/stories/nasi-ambeng/nasi-ambeng"
+            },
+            {
+              "title": "Azlin Bloor — Sambal Goreng",
+              "url": "https://www.singaporeanmalaysianrecipes.com/sambal-goreng-recipe-vegan/"
+            }
+          ]
+        }
+      },
+      {
+        "id": "urap",
+        "asset": "urap",
+        "name": "Urap",
+        "look": "urap",
+        "note": "A crunchy vegetable salad with a coconut dressing.",
+        "popularity": 1,
+        "info": {
+          "subtitle": "Vegetables dressed with seasoned coconut",
+          "description": "A mix of vegetables and seasoned grated coconut. Long beans, leafy greens, cabbage and bean sprouts appear in different versions. The vegetables are usually cooked first.",
+          "ingredients": "Mixed vegetables and seasoned grated coconut.",
+          "taste": "A vegetable bite with a coconut-rich dressing and contrasting textures.",
+          "spot": "Green vegetables dotted with pale coconut flakes.",
+          "story": "Vegetables and seasonings vary by place. In Java, urap can also accompany tumpeng at thanksgiving gatherings.",
+          "sources": [
+            {
+              "title": "Roots.sg — Nasi Ambeng",
+              "url": "https://www.roots.gov.sg/stories-landing/stories/nasi-ambeng/nasi-ambeng"
+            },
+            {
+              "title": "Indonesia Ministry of Health — Mediakom, June 2023, p. 9",
+              "url": "https://kemkes.go.id/app_asset/file_content_download/171090727265fa5f88bceb94.01932469.pdf#page=9"
+            }
+          ]
+        }
+      },
+      {
+        "id": "serunding",
+        "asset": "serunding",
+        "name": "Serunding",
+        "look": "serunding",
+        "note": "Grated coconut, sautéed until dry and golden.",
+        "popularity": 1,
+        "info": {
+          "subtitle": "Fragrant shreds of spiced coconut",
+          "description": "The serunding on this tray is coconut serunding: grated coconut cooked with spices until fairly dry. A spoonful adds flavour and texture alongside rice and other dishes.",
+          "ingredients": "Grated coconut and spices; some versions include chilli and sugar.",
+          "taste": "Fragrant and toasty, with sweetness or heat depending on the recipe.",
+          "spot": "The loose golden-brown coconut shreds.",
+          "story": "Serunding can also be made with beef or chicken. This game uses the coconut version described in the Roots nasi ambeng account.",
+          "sources": [
+            {
+              "title": "Roots.sg — Nasi Ambeng",
+              "url": "https://www.roots.gov.sg/stories-landing/stories/nasi-ambeng/nasi-ambeng"
+            },
+            {
+              "title": "Azlin Bloor — Serunding Kelapa",
+              "url": "https://www.singaporeanmalaysianrecipes.com/how-to-make-serunding-kelapa-spiced-coconut-floss/"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "about": {
+    "title": "About nasi ambeng",
+    "cards": [
+      {
+        "title": "Food for every majlis",
+        "text": "Javanese families in Singapore served nasi ambeng to guests after the prayers at thanksgiving ceremonies and communal feasts. One large platter, shared by everyone around it."
+      },
+      {
+        "title": "From kampung to restaurant",
+        "text": "Restaurants started selling it in the late 1970s. Madam Azizah Ali of Azizah's Restaurant on Emerald Hill was one of the first, and it became one of her most popular dishes."
+      },
+      {
+        "title": "Still changing",
+        "text": "Many eateries now serve it on individual plates. Warong Anak Wedok planned a new version, nasi remes, that mixes nasi ambeng's dishes with nasi liwet."
+      }
+    ],
+    "sources": {
+      "facts": "Facts from <a href=\"https://www.roots.gov.sg/stories-landing/stories/nasi-ambeng/nasi-ambeng\">Nasi Ambeng</a> by Syafiq Moklas (NTU History Programme), produced for Singapore HeritageFest 2021, on Roots.sg.",
+      "media": [
+        "Food and character illustrations generated with OpenAI for this game. Background music is an original composition synthesized in the browser."
+      ]
+    }
+  }
+}

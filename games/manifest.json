@@ -34,7 +34,7 @@
     {
       "slug": "rangoli",
       "title": "One Unbroken Line",
-      "blurb": "Trace four rangoli designs without lifting your finger.",
+      "blurb": "Trace three rangoli designs without lifting your finger, then colour them in.",
       "mechanic": "trace",
       "publish": "2026-11-01"
     },
@@ -55,9 +55,9 @@
     {
       "slug": "wayang-kulit",
       "title": "Behind the Screen",
-      "blurb": "Shadow puppets, one puppet master. Four questions.",
-      "mechanic": "pick",
-      "publish": "2099-01-01"
+      "blurb": "Be the dalang. Listen to the story and move real museum puppets onto the screen.",
+      "mechanic": "stage",
+      "publish": "2026-11-08"
     },
     {
       "slug": "sepak-takraw",
@@ -65,6 +65,27 @@
       "blurb": "No hands, three touches, a rattan ball. Learn the Malay names.",
       "mechanic": "match",
       "publish": "2099-01-01"
+    },
+    {
+      "slug": "nasi-ambeng",
+      "title": "Leave Some for Berkat",
+      "blurb": "Four guests share one tray. Feed them all, and still send every family home with something.",
+      "mechanic": "berkat",
+      "publish": "2026-11-08"
+    },
+    {
+      "slug": "five-stones",
+      "title": "Five Stones",
+      "blurb": "Throw one stone up, sweep the others off the floor, and catch it before it lands.",
+      "mechanic": "stones",
+      "publish": "2099-01-01"
+    },
+    {
+      "slug": "spice-counter",
+      "title": "The Spice Counter",
+      "blurb": "Six days behind a provision shop counter. Scoop, grind and bag each blend before your customers lose patience.",
+      "mechanic": "spice",
+      "publish": "2026-11-08"
     },
     {
       "slug": "hawker-centre",

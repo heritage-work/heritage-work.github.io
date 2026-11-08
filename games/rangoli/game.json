@@ -2,524 +2,662 @@
   "title": "One Unbroken Line",
   "kicker": "Rangoli",
   "mechanic": "trace",
-  "blurb": "Trace four rangoli designs without lifting your finger.",
+  "blurb": "Trace three rangoli designs without lifting your finger, then colour them in.",
   "fact": "A rangoli pattern is made of unbroken lines, which is thought to stop evil spirits from slipping in through the gaps. That's why your line couldn't break.",
-  "credit": "Facts from the National Heritage Board's <a href=\"https://www.roots.gov.sg/ich-landing/ich/rangoli\">Roots entry on rangoli</a>. Text and art are original.",
+  "credit": "Source: <a href=\"https://www.roots.gov.sg/ich-landing/ich/rangoli\">Rangoli</a> (ICH-058), Intangible Cultural Heritage inventory, <a href=\"https://www.roots.gov.sg\">Roots.sg</a>, National Heritage Board. Text and art are original. Background music is an original synthesized Indian-inspired instrumental.",
   "content": {
-    "prompt": "Start on any dot and trace every line once. Lift your finger and the line breaks.",
-    "patterns": [
+    "prompt": "Trace every line once. Lift your finger and the line breaks.",
+    "powders": [
       {
-        "name": "Four-petal flower",
-        "dots": [
-          [
-            50,
-            50
-          ],
-          [
-            50.0,
-            12.0
-          ],
-          [
-            88.0,
-            50.0
-          ],
-          [
-            50.0,
-            88.0
-          ],
-          [
-            12.0,
-            50.0
-          ]
-        ],
-        "lines": [
-          [
-            0,
-            1,
-            26
-          ],
-          [
-            0,
-            1,
-            -26
-          ],
-          [
-            0,
-            2,
-            26
-          ],
-          [
-            0,
-            2,
-            -26
-          ],
-          [
-            0,
-            3,
-            26
-          ],
-          [
-            0,
-            3,
-            -26
-          ],
-          [
-            0,
-            4,
-            26
-          ],
-          [
-            0,
-            4,
-            -26
-          ]
-        ],
-        "note": "Rangoli is called kolam in Tamil. Fresh designs may be drawn every day at the home's entrance, with the old one cleaned off."
+        "name": "Turmeric",
+        "colour": "#e0a526",
+        "label": "Yellow · Turmeric",
+        "description": "Turmeric is a yellow spice powder. Here it gives your rangoli its golden yellow colour."
       },
       {
-        "name": "Kolam circle",
+        "name": "Vermilion",
+        "colour": "#d2462e",
+        "label": "Red · Vermilion",
+        "description": "Vermilion is a bright red pigment, represented here by the red colour."
+      },
+      {
+        "name": "Flower petals",
+        "colour": "#c2457f",
+        "label": "Pink · Flower petals",
+        "description": "Petals are the colourful parts of flowers. Here they are represented by pink."
+      },
+      {
+        "name": "Pulses",
+        "colour": "#4f8f4a",
+        "label": "Green · Pulses",
+        "description": "Pulses are dried lentils, peas and beans. Here they are represented by green."
+      },
+      {
+        "name": "Rice flour",
+        "colour": "#f4ede0",
+        "label": "White · Rice flour",
+        "description": "Rice flour is finely ground rice, represented here by white."
+      }
+    ],
+    "patterns": [
+      {
+        "name": "Diya",
+        "note": "Some families place diyas (oil lamps) inside the rangoli and light them for a puja (prayer). Rangoli is especially prominent during Deepavali.",
         "dots": [
           [
+            20,
+            62
+          ],
+          [
             50,
-            50
+            62
           ],
           [
-            50.0,
-            12.0
+            80,
+            62
           ],
           [
-            88.0,
-            50.0
+            50,
+            79
           ],
           [
-            50.0,
-            88.0
+            50,
+            94
           ],
           [
-            12.0,
-            50.0
+            50,
+            44
+          ],
+          [
+            50,
+            16
+          ],
+          [
+            16,
+            40
+          ],
+          [
+            28,
+            20
+          ],
+          [
+            72,
+            20
+          ],
+          [
+            84,
+            40
           ]
         ],
         "lines": [
           [
             0,
             1,
-            26
-          ],
-          [
-            0,
-            1,
-            -26
-          ],
-          [
-            0,
-            2,
-            26
-          ],
-          [
-            0,
-            2,
-            -26
-          ],
-          [
-            0,
-            3,
-            26
-          ],
-          [
-            0,
-            3,
-            -26
-          ],
-          [
-            0,
-            4,
-            26
-          ],
-          [
-            0,
-            4,
-            -26
+            0
           ],
           [
             1,
             2,
-            -22.3
+            0
           ],
           [
+            0,
+            3,
+            17
+          ],
+          [
+            3,
             2,
+            17
+          ],
+          [
+            0,
             3,
-            -22.3
+            6
+          ],
+          [
+            3,
+            2,
+            6
           ],
           [
             3,
             4,
-            -22.3
+            6
           ],
           [
+            3,
             4,
+            -6
+          ],
+          [
             1,
-            -22.3
+            5,
+            4
+          ],
+          [
+            1,
+            5,
+            -4
+          ],
+          [
+            5,
+            6,
+            14
+          ],
+          [
+            5,
+            6,
+            -14
+          ],
+          [
+            5,
+            6,
+            6
+          ],
+          [
+            5,
+            6,
+            -6
+          ],
+          [
+            5,
+            7,
+            5
+          ],
+          [
+            5,
+            7,
+            -5
+          ],
+          [
+            5,
+            8,
+            5
+          ],
+          [
+            5,
+            8,
+            -5
+          ],
+          [
+            5,
+            9,
+            5
+          ],
+          [
+            5,
+            9,
+            -5
+          ],
+          [
+            5,
+            10,
+            5
+          ],
+          [
+            5,
+            10,
+            -5
           ]
-        ],
-        "note": "Circular designs are among the most popular. They signify the endlessness of time."
+        ]
       },
       {
         "name": "Eight-point star",
+        "note": "Designs range from geometric shapes to peacock motifs, flowers and the faces of Hindu gods. Some are drawn freehand in rice flour.",
         "dots": [
           [
-            50.0,
-            8.0
+            50,
+            16
           ],
           [
-            79.7,
-            20.3
+            74,
+            26
           ],
           [
-            92.0,
-            50.0
+            84,
+            50
           ],
           [
-            79.7,
-            79.7
+            74,
+            74
           ],
           [
-            50.0,
-            92.0
+            50,
+            84
           ],
           [
-            20.3,
-            79.7
+            26,
+            74
           ],
           [
-            8.0,
-            50.0
+            16,
+            50
           ],
           [
-            20.3,
-            20.3
+            26,
+            26
           ],
           [
-            79.7,
-            37.7
+            67.6,
+            7.5
           ],
           [
-            62.3,
-            20.3
+            92.5,
+            32.4
           ],
           [
-            79.7,
-            62.3
+            92.5,
+            67.6
           ],
           [
-            62.3,
-            79.7
+            67.6,
+            92.5
           ],
           [
-            37.7,
-            79.7
+            32.4,
+            92.5
           ],
           [
-            20.3,
-            62.3
+            7.5,
+            67.6
           ],
           [
-            20.3,
-            37.7
+            7.5,
+            32.4
           ],
           [
-            37.7,
-            20.3
+            32.4,
+            7.5
           ]
         ],
         "lines": [
           [
             0,
-            9,
-            0
-          ],
-          [
-            9,
-            8,
-            0
-          ],
-          [
-            8,
             2,
             0
           ],
           [
             1,
-            8,
-            0
-          ],
-          [
-            8,
-            10,
-            0
-          ],
-          [
-            10,
             3,
             0
           ],
           [
             2,
-            10,
-            0
-          ],
-          [
-            10,
-            11,
-            0
-          ],
-          [
-            11,
             4,
             0
           ],
           [
             3,
-            11,
-            0
-          ],
-          [
-            11,
-            12,
-            0
-          ],
-          [
-            12,
             5,
             0
           ],
           [
             4,
-            12,
-            0
-          ],
-          [
-            12,
-            13,
-            0
-          ],
-          [
-            13,
             6,
             0
           ],
           [
             5,
-            13,
-            0
-          ],
-          [
-            13,
-            14,
-            0
-          ],
-          [
-            14,
             7,
             0
           ],
           [
             6,
-            14,
-            0
-          ],
-          [
-            14,
-            15,
-            0
-          ],
-          [
-            15,
             0,
             0
           ],
           [
             7,
-            15,
-            0
-          ],
-          [
-            15,
-            9,
-            0
-          ],
-          [
-            9,
             1,
             0
+          ],
+          [
+            0,
+            8,
+            -4
+          ],
+          [
+            8,
+            1,
+            -4
+          ],
+          [
+            1,
+            9,
+            -4
+          ],
+          [
+            9,
+            2,
+            -4
+          ],
+          [
+            2,
+            10,
+            -4
+          ],
+          [
+            10,
+            3,
+            -4
+          ],
+          [
+            3,
+            11,
+            -4
+          ],
+          [
+            11,
+            4,
+            -4
+          ],
+          [
+            4,
+            12,
+            -4
+          ],
+          [
+            12,
+            5,
+            -4
+          ],
+          [
+            5,
+            13,
+            -4
+          ],
+          [
+            13,
+            6,
+            -4
+          ],
+          [
+            6,
+            14,
+            -4
+          ],
+          [
+            14,
+            7,
+            -4
+          ],
+          [
+            7,
+            15,
+            -4
+          ],
+          [
+            15,
+            0,
+            -4
           ]
-        ],
-        "note": "Designs range from geometric shapes to peacock motifs, flowers and the faces of Hindu gods. Some are drawn freehand in rice flour."
+        ]
       },
       {
         "name": "Lotus",
+        "note": "The lotus, with Goddess Lakshmi in the middle, stands for prosperity and fertility in Hinduism.",
         "dots": [
           [
             50,
             50
           ],
           [
-            50.0,
-            10.0
+            50,
+            32
           ],
           [
-            78.3,
-            21.7
+            65.6,
+            41
           ],
           [
-            90.0,
-            50.0
+            65.6,
+            59
           ],
           [
-            78.3,
-            78.3
+            50,
+            68
           ],
           [
-            50.0,
-            90.0
+            34.4,
+            59
           ],
           [
-            21.7,
-            78.3
+            34.4,
+            41
           ],
           [
-            10.0,
-            50.0
+            70,
+            15.4
           ],
           [
-            21.7,
-            21.7
+            90,
+            50
+          ],
+          [
+            70,
+            84.6
+          ],
+          [
+            30,
+            84.6
+          ],
+          [
+            10,
+            50
+          ],
+          [
+            30,
+            15.4
           ]
         ],
         "lines": [
           [
             0,
             1,
-            15
+            6
           ],
           [
             0,
             1,
-            -15
+            -6
           ],
           [
             0,
             2,
-            15
+            6
           ],
           [
             0,
             2,
-            -15
+            -6
           ],
           [
             0,
             3,
-            15
+            6
           ],
           [
             0,
             3,
-            -15
+            -6
           ],
           [
             0,
             4,
-            15
+            6
           ],
           [
             0,
             4,
-            -15
+            -6
           ],
           [
             0,
             5,
-            15
+            6
           ],
           [
             0,
             5,
-            -15
+            -6
           ],
           [
             0,
             6,
-            15
+            6
           ],
           [
             0,
             6,
-            -15
-          ],
-          [
-            0,
-            7,
-            15
-          ],
-          [
-            0,
-            7,
-            -15
-          ],
-          [
-            0,
-            8,
-            15
-          ],
-          [
-            0,
-            8,
-            -15
+            -6
           ],
           [
             1,
-            2,
-            -6.1
-          ],
-          [
-            2,
-            3,
-            -6.1
-          ],
-          [
-            3,
-            4,
-            -6.1
-          ],
-          [
-            4,
-            5,
-            -6.1
-          ],
-          [
-            5,
-            6,
-            -6.1
-          ],
-          [
-            6,
             7,
-            -6.1
+            -8
           ],
           [
             7,
+            2,
+            -8
+          ],
+          [
+            2,
             8,
-            -6.1
+            -8
           ],
           [
             8,
+            3,
+            -8
+          ],
+          [
+            3,
+            9,
+            -8
+          ],
+          [
+            9,
+            4,
+            -8
+          ],
+          [
+            4,
+            10,
+            -8
+          ],
+          [
+            10,
+            5,
+            -8
+          ],
+          [
+            5,
+            11,
+            -8
+          ],
+          [
+            11,
+            6,
+            -8
+          ],
+          [
+            6,
+            12,
+            -8
+          ],
+          [
+            12,
             1,
-            -6.1
+            -8
+          ],
+          [
+            7,
+            8,
+            -21.4
+          ],
+          [
+            8,
+            9,
+            -21.4
+          ],
+          [
+            9,
+            10,
+            -21.4
+          ],
+          [
+            10,
+            11,
+            -21.4
+          ],
+          [
+            11,
+            12,
+            -21.4
+          ],
+          [
+            12,
+            7,
+            -21.4
           ]
-        ],
-        "note": "The lotus, with Goddess Lakshmi in the middle, stands for prosperity and fertility in Hinduism. Some families light diyas (oil lamps) inside the rangoli for a puja."
+        ]
       }
     ]
+  },
+  "music": "indian-inspired",
+  "about": {
+    "title": "Rangoli in Singapore",
+    "figures": [
+      {
+        "src": "images/roots-rangoli.jpg",
+        "alt": "A large circular rangoli with peacock motifs and trays of coloured powder around it",
+        "caption": "A large rangoli with peacock motifs, ringed by trays of coloured materials. Photo: Ms Vijayalakshmi Mohan, from <a href=\"https://www.roots.gov.sg/ich-landing/ich/rangoli\" target=\"_blank\" rel=\"noopener\">Rangoli (ICH-058)</a>, Roots.sg."
+      },
+      {
+        "src": "images/roots-filling.jpg",
+        "alt": "Coloured powder being filled into a rangoli outline",
+        "caption": "Ms Vijayalakshmi Mohan outlines her pattern in white first, then fills the spaces inside with coloured powders, just like this game. Photo: <a href=\"https://www.roots.gov.sg/ich-landing/ich/rangoli\" target=\"_blank\" rel=\"noopener\">Rangoli (ICH-058)</a>, Roots.sg."
+      },
+      {
+        "src": "images/roots-mohan.jpg",
+        "alt": "Ms Vijayalakshmi Mohan with a colourful rangoli",
+        "caption": "Singapore-based artist Ms Vijayalakshmi Mohan with one of her rangoli. They're often drawn outside the home to bring good luck. Photo: <a href=\"https://www.roots.gov.sg/ich-landing/ich/rangoli\" target=\"_blank\" rel=\"noopener\">Rangoli (ICH-058)</a>, Roots.sg."
+      },
+      {
+        "caption": "<b>Watch rangoli being made.</b> Roots.sg's short film follows the art form in Singapore. <a href=\"https://www.youtube.com/watch?v=ujPT-L8APig\" target=\"_blank\" rel=\"noopener\">Watch “Rangoli” on YouTube</a> (Roots SG)."
+      }
+    ],
+    "cards": [
+      {
+        "title": "An array of colours",
+        "text": "<i>Rangoli</i> means ‘an array of colours’ in Sanskrit, and it's known as <i>kolam</i> in Tamil. The art dates back some 5,000 years and was brought to Singapore by Indian migrants."
+      },
+      {
+        "title": "Drawn at the doorway",
+        "text": "Rangoli stands for wealth, joy and prosperity, and thanks to the deities. Drawn at the main entrance, it's believed to stop evil forces coming in, so some homes draw a fresh one every day. It's prominent at Deepavali."
+      },
+      {
+        "title": "Unbroken lines",
+        "text": "A rangoli pattern is made of unbroken lines, thought to keep evil spirits from slipping in through the gaps. Circular designs signify the endlessness of time, and the lotus with Goddess Lakshmi stands for prosperity."
+      },
+      {
+        "title": "Rice flour to recyclables",
+        "text": "Traditional rangoli is drawn freehand in rice flour, or filled in through a stencil. Colours come from grains, seeds, pulses, vermillion, turmeric and petals. Ms Mohan's ‘SingaRangoli’ uses 30 to 40 materials, even recyclables."
+      },
+      {
+        "title": "A world record",
+        "text": "In 2003 Ms Mohan made a 256-square-metre rangoli at Whampoa Community Club, then the world's largest, according to the Guinness Book of Records. In 2017, 1,000 participants helped her make 1,500 ‘lantern rangoli’ for Gardens by the Bay."
+      }
+    ],
+    "sources": {
+      "facts": "Facts: National Heritage Board, Roots.sg: <a href=\"https://www.roots.gov.sg/ich-landing/ich/rangoli\" target=\"_blank\" rel=\"noopener\">Rangoli (ICH-058)</a>.",
+      "media": [
+        "Photos: <a href=\"https://www.roots.gov.sg/ich-landing/ich/rangoli\" target=\"_blank\" rel=\"noopener\">Rangoli (ICH-058)</a> on Roots.sg (the peacock rangoli is credited to Ms Vijayalakshmi Mohan), resized for this page.",
+        "Video: <a href=\"https://www.youtube.com/watch?v=ujPT-L8APig\" target=\"_blank\" rel=\"noopener\">Rangoli</a>, Roots SG on YouTube.",
+        "Patterns and game art: original."
+      ]
+    }
   }
 }

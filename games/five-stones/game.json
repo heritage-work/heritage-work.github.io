@@ -1,0 +1,13 @@
+{
+  "title": "Five Stones",
+  "kicker": "Playground games",
+  "mechanic": "stones",
+  "blurb": "Throw one stone up, sweep the others off the floor, and catch it before it lands.",
+  "content": {
+    "lives": 3,
+    "steps": [
+      { "title": "Step 1: Ones", "picks": [1, 1, 1, 1] },
+      { "title": "Step 2: Twos", "picks": [2, 2] }
+    ]
+  }
+}

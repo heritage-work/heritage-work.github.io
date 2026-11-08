@@ -4,7 +4,7 @@
   "mechanic": "order",
   "blurb": "Six steps from rice grain to pandan leaf.",
   "fact": "Kueh tutu is said to have been created in Singapore in the 1930s by Mr Tan Eng Huat. Its flower shape is believed to come from the chrysanthemum.",
-  "credit": "Facts from the National Heritage Board's <a href=\"https://www.roots.gov.sg/ich-landing/ich/kueh-tutu\">Roots entry on kueh tutu</a>. Text and art are original.",
+  "credit": "Source: <a href=\"https://www.roots.gov.sg/ich-landing/ich/kueh-tutu\">Kueh Tutu</a> (ICH-068), Intangible Cultural Heritage inventory, <a href=\"https://www.roots.gov.sg\">Roots.sg</a>, National Heritage Board. Text and art are original.",
   "content": {
     "prompt": "Put the steps in order.",
     "items": [

@@ -1,0 +1,108 @@
+{
+  "title": "What's on Your Tray?",
+  "kicker": "Nasi ambeng",
+  "mechanic": "tray",
+  "blurb": "Pick four dishes to go around the rice. What you pick says who you are at the table.",
+  "fact": "A nasi ambeng tray was never meant to be finished. Guests left food on it to share out and take home to their families, as nasi berkat: food blessed by the host.",
+  "credit": "Source: <a href=\"https://www.roots.gov.sg/stories-landing/stories/nasi-ambeng/nasi-ambeng\">Nasi Ambeng</a> by Syafiq Moklas (NTU History Programme), <a href=\"https://www.roots.gov.sg\">Roots.sg</a>, National Heritage Board. Bergedil, ayam goreng and rempeyek are common extras that the story doesn't name. The personalities are just for fun. Art is original.",
+  "content": {
+    "pick": 4,
+    "prompt": "The rice is in the middle. Pick four dishes to go around it.",
+    "dishes": [
+      {
+        "id": "rendang",
+        "name": "Rendang",
+        "look": "rendang",
+        "note": "Beef or chicken, slow-cooked until the gravy clings.",
+        "types": { "host": 2, "spark": 1 }
+      },
+      {
+        "id": "sambal-goreng",
+        "name": "Sambal goreng",
+        "look": "sambal",
+        "note": "Fried chilli paste cooked with tempe and long beans.",
+        "types": { "spark": 2, "balancer": 1 }
+      },
+      {
+        "id": "tempe-goreng",
+        "name": "Tempe goreng",
+        "look": "tempe",
+        "note": "Fried fermented soybean cake, crisp at the edges.",
+        "types": { "anchor": 2, "balancer": 1 }
+      },
+      {
+        "id": "urap",
+        "name": "Urap",
+        "look": "urap",
+        "note": "A crunchy vegetable salad with a coconut dressing.",
+        "types": { "balancer": 2, "anchor": 1 }
+      },
+      {
+        "id": "serunding",
+        "name": "Serunding",
+        "look": "serunding",
+        "note": "Grated coconut, sautéed until dry and golden.",
+        "types": { "balancer": 2, "spark": 1 }
+      },
+      {
+        "id": "bergedil",
+        "name": "Bergedil",
+        "look": "bergedil",
+        "note": "Fried potato patties. Not in the story, but often on the tray.",
+        "types": { "anchor": 2, "host": 1 }
+      },
+      {
+        "id": "ayam-goreng",
+        "name": "Ayam goreng",
+        "look": "ayam",
+        "note": "Spiced fried chicken. Not in the story, but often on the tray.",
+        "types": { "host": 2, "anchor": 1 }
+      },
+      {
+        "id": "rempeyek",
+        "name": "Rempeyek",
+        "look": "rempeyek",
+        "note": "Thin, crisp crackers studded with peanuts. Not in the story, but often on the tray.",
+        "types": { "spark": 2, "host": 1 }
+      }
+    ],
+    "types": {
+      "host": {
+        "name": "The Host",
+        "text": "You cook for a crowd and make sure nobody leaves hungry. Slow, generous, worth the wait."
+      },
+      "spark": {
+        "name": "The Spark",
+        "text": "You bring the heat and the crunch. The tray would be quieter without you, and duller."
+      },
+      "anchor": {
+        "name": "The Anchor",
+        "text": "Humble and dependable, and always the first thing to run out. People count on you without saying so."
+      },
+      "balancer": {
+        "name": "The Balancer",
+        "text": "You see what the tray is missing and add it. A light touch and a sharp eye."
+      }
+    }
+  },
+  "about": {
+    "title": "About nasi ambeng",
+    "cards": [
+      {
+        "title": "Food for every majlis",
+        "text": "Javanese families in Singapore served nasi ambeng to guests after the prayers at thanksgiving ceremonies and communal feasts. One large platter, shared by everyone around it."
+      },
+      {
+        "title": "From kampung to restaurant",
+        "text": "Restaurants started selling it in the late 1970s. Madam Azizah Ali of Azizah's Restaurant on Emerald Hill was one of the first, and it became one of her most popular dishes."
+      },
+      {
+        "title": "Still changing",
+        "text": "Many eateries now serve it on individual plates. Warong Anak Wedok planned a new version, nasi remes, that mixes nasi ambeng's dishes with nasi liwet."
+      }
+    ],
+    "sources": {
+      "facts": "Facts from <a href=\"https://www.roots.gov.sg/stories-landing/stories/nasi-ambeng/nasi-ambeng\">Nasi Ambeng</a> by Syafiq Moklas (NTU History Programme), produced for Singapore HeritageFest 2021, on Roots.sg."
+    }
+  }
+}

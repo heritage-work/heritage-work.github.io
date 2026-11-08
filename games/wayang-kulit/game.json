@@ -1,52 +1,433 @@
 {
   "title": "Behind the Screen",
   "kicker": "Wayang kulit",
-  "mechanic": "pick",
-  "blurb": "Shadow puppets, one puppet master. Four questions.",
+  "mechanic": "stage",
+  "blurb": "Be the dalang. Listen to the story and move real museum puppets onto the screen.",
   "fact": "The dalang does it all: moves every puppet, voices every character, leads the singers and conducts the gamelan, while keeping sound effects with a mallet and his foot.",
-  "credit": "Facts from the National Heritage Board's <a href=\"https://www.roots.gov.sg/ich-landing/ich/wayang-kulit\">Roots entry on wayang kulit</a>. Text and art are original.",
+  "credit": "Source: <a href=\"https://www.roots.gov.sg/stories-landing/stories/Behind-the-Shadows-Javanese-Wayang-Kulit-Puppets\">Behind the Shadows: Javanese Wayang Kulit Puppets in Ramayana</a> and <a href=\"https://www.roots.gov.sg/ich-landing/ich/wayang-kulit\">Wayang Kulit</a> (ICH-009), <a href=\"https://www.roots.gov.sg\">Roots.sg</a>, National Heritage Board. Puppets from the collection of the Asian Civilisations Museum. Narration is computer-generated. Music: <a href=\"https://freemusicarchive.org/music/Gamelan_Nyai_Saraswati/Performing_Music_of_Central_Java/gamelan_nyai_saraswati_-_02_-_ladrang_wilujeng/\">Ladrang Wilujeng</a> by Gamelan Nyai Saraswati, <a href=\"https://creativecommons.org/licenses/by-nc/3.0/us/\">CC BY-NC 3.0 US</a>, cut to a loop.",
+  "assets": {
+    "kayon": {
+      "image": "images/kayon.webp"
+    },
+    "rama": {
+      "image": "images/rama.webp"
+    },
+    "sinta": {
+      "image": "images/sinta.webp"
+    },
+    "lesmana": {
+      "image": "images/lesmana.webp"
+    },
+    "rahwana": {
+      "image": "images/rahwana.webp"
+    },
+    "jatayu": {
+      "image": "images/jatayu.webp"
+    },
+    "hanoman": {
+      "image": "images/hanoman.webp"
+    },
+    "wibisana": {
+      "image": "images/wibisana.webp"
+    },
+    "ogre": {
+      "image": "images/ogre.webp"
+    },
+    "deer": {
+      "image": "images/deer.webp"
+    },
+    "semar": {
+      "image": "images/semar.webp"
+    },
+    "gamelan": {
+      "audio": "audio/gamelan-loop"
+    },
+    "b01": {
+      "audio": "audio/b01"
+    },
+    "b02": {
+      "audio": "audio/b02"
+    },
+    "b03": {
+      "audio": "audio/b03"
+    },
+    "b04": {
+      "audio": "audio/b04"
+    },
+    "b04d": {
+      "audio": "audio/b04d"
+    },
+    "b04x": {
+      "audio": "audio/b04x"
+    },
+    "b05": {
+      "audio": "audio/b05"
+    },
+    "b05x": {
+      "audio": "audio/b05x"
+    },
+    "b06": {
+      "audio": "audio/b06"
+    },
+    "b06x": {
+      "audio": "audio/b06x"
+    },
+    "b07": {
+      "audio": "audio/b07"
+    },
+    "b08": {
+      "audio": "audio/b08"
+    },
+    "b09": {
+      "audio": "audio/b09"
+    },
+    "b10": {
+      "audio": "audio/b10"
+    },
+    "b11": {
+      "audio": "audio/b11"
+    },
+    "b11x": {
+      "audio": "audio/b11x"
+    },
+    "b12": {
+      "audio": "audio/b12"
+    },
+    "b13": {
+      "audio": "audio/b13"
+    }
+  },
   "content": {
-    "questions": [
+    "intro": "Listen to the story. When the big words call for a puppet, drag it from the banana trunk to the glowing mark.",
+    "seconds": 8,
+    "music": "gamelan",
+    "puppets": {
+      "hanoman": {
+        "name": "Hanoman",
+        "side": "good",
+        "height": 0.73,
+        "faces": "right"
+      },
+      "jatayu": {
+        "name": "Jatayu",
+        "side": "good",
+        "height": 0.42,
+        "faces": "right"
+      },
+      "semar": {
+        "name": "Semar",
+        "side": "good",
+        "height": 0.64,
+        "faces": "left"
+      },
+      "lesmana": {
+        "name": "Lesmana",
+        "side": "good",
+        "height": 0.67,
+        "faces": "left"
+      },
+      "sinta": {
+        "name": "Sinta",
+        "side": "good",
+        "height": 0.52,
+        "faces": "left"
+      },
+      "rama": {
+        "name": "Rama",
+        "side": "good",
+        "height": 0.72,
+        "faces": "left"
+      },
+      "wibisana": {
+        "name": "Wibisana",
+        "side": "good",
+        "height": 0.7,
+        "faces": "left"
+      },
+      "kayon": {
+        "name": "Kayon",
+        "side": "centre",
+        "height": 0.96
+      },
+      "rahwana": {
+        "name": "Rahwana",
+        "side": "bad",
+        "height": 0.85,
+        "faces": "right"
+      },
+      "ogre": {
+        "name": "Ogre",
+        "side": "bad",
+        "height": 0.75,
+        "faces": "right"
+      },
+      "deer": {
+        "name": "Golden deer",
+        "side": "bad",
+        "height": 0.4,
+        "faces": "left"
+      }
+    },
+    "beats": [
       {
-        "prompt": "Who controls the puppets in wayang kulit?",
-        "options": [
-          "The dalang",
-          "The pesindhen",
-          "The gamelan leader"
-        ],
-        "answer": 0,
-        "note": "The dalang, the puppet master, also voices the characters and conducts the orchestra."
+        "puppet": "kayon",
+        "x": 0.5,
+        "cue": "Plant the kayon in the middle",
+        "story": "The lamp is lit and the gamelan plays. Before any story begins, the kayon, the tree of life, rises in the middle of the screen.",
+        "speak": "The lamp is lit, and the gamelan plays. Before any story begins, the kah-yon, the tree of life, rises in the middle of the screen.",
+        "audio": "b01",
+        "after": {
+          "exit": [
+            "kayon"
+          ]
+        }
       },
       {
-        "prompt": "What holds the puppets upright while they wait?",
-        "options": [
-          "A wooden rack",
-          "A banana trunk",
-          "A sand tray"
-        ],
-        "answer": 1,
-        "note": "Their pointed ends are staked into a banana trunk, with good characters on the dalang's left and bad on his right."
+        "puppet": "rama",
+        "x": 0.3,
+        "cue": "Bring on Rama",
+        "story": "This is the Ramayana. Here walks Prince Rama. His black face tells of his noble line, his downward gaze of a refined nature.",
+        "speak": "This is the Rah-mah-yah-na. Here walks Prince Rah-ma. His black face tells of his noble line. His downward gaze, of a refined nature.",
+        "audio": "b02"
       },
       {
-        "prompt": "Some people sit behind the screen instead of in front. What is that seat linked to?",
-        "options": [
-          "The musicians",
-          "The gods",
-          "The puppet makers"
-        ],
-        "answer": 1,
-        "note": "From behind you see the puppets themselves, a position traditionally associated with the gods."
+        "puppet": "sinta",
+        "x": 0.42,
+        "cue": "Bring on Sinta",
+        "story": "At his side is his wife, Dewi Sinta, eyes lowered, her stance narrow and graceful.",
+        "speak": "At his side, is his wife, Day-wee Sinta. Eyes lowered. Her stance, narrow and graceful.",
+        "audio": "b03"
       },
       {
-        "prompt": "Which local hero appears in wayang kulit in Singapore?",
-        "options": [
-          "Hang Tuah",
-          "Admiral Zheng He",
-          "Sir Stamford Raffles"
+        "puppet": "lesmana",
+        "x": 0.18,
+        "cue": "Bring on Lesmana",
+        "story": "And never far behind is Lesmana, Rama's loyal brother.",
+        "speak": "And never far behind, is Les-mah-na, Rah-ma's loyal brother.",
+        "audio": "b04"
+      },
+      {
+        "puppet": "deer",
+        "x": 0.66,
+        "face": "left",
+        "cue": "Send in the golden deer",
+        "story": "Then a golden deer appears. It is really Maricha, a demon in disguise, come to lure Rama and Lesmana away from Sinta.",
+        "speak": "Then a golden deer appears. It is really Mah-ree-cha, a demon in disguise, come to lure Rah-ma and Les-mah-na away from Sinta.",
+        "audio": "b04d",
+        "after": {
+          "story": "Rama chases it into the forest. Soon Lesmana goes after him, and Sinta is left alone.",
+          "speak": "Rah-ma chases it into the forest. Soon, Les-mah-na goes after him. And Sinta is left alone.",
+          "audio": "b04x",
+          "exit": [
+            "deer",
+            "rama",
+            "lesmana"
+          ],
+          "exitTo": "right"
+        }
+      },
+      {
+        "puppet": "rahwana",
+        "x": 0.74,
+        "cue": "Bring on Rahwana",
+        "story": "But someone is watching. Rahwana, ogre king of Alengka: blue face, wide eyes, a sneering mouth.",
+        "speak": "But someone is watching. Rah-wah-na, ogre king of Ah-leng-ka. Blue face. Wide eyes. A sneering mouth.",
+        "audio": "b05",
+        "after": {
+          "story": "Rahwana seizes Sinta and carries her away!",
+          "speak": "Rah-wah-na seizes Sinta, and carries her away!",
+          "audio": "b05x",
+          "exit": [
+            "rahwana",
+            "sinta"
+          ]
+        }
+      },
+      {
+        "puppet": "jatayu",
+        "x": 0.62,
+        "y": 0.3,
+        "face": "right",
+        "cue": "Send in Jatayu",
+        "story": "High above, the great bird Jatayu sees it all, and swoops down to fight Rahwana.",
+        "speak": "High above, the great bird, Jah-tah-yoo, sees it all, and swoops down to fight Rah-wah-na.",
+        "audio": "b06",
+        "after": {
+          "story": "Jatayu falls. With his last breath, he tells Rama and Lesmana that Sinta has been taken.",
+          "speak": "Jah-tah-yoo falls. With his last breath, he tells Rah-ma and Les-mah-na that Sinta has been taken.",
+          "audio": "b06x",
+          "fall": [
+            "jatayu"
+          ]
+        }
+      },
+      {
+        "puppet": "kayon",
+        "x": 0.5,
+        "cue": "Plant the kayon to change the scene",
+        "story": "The kayon sweeps across the screen. The scene changes, and the story moves on.",
+        "speak": "The kah-yon sweeps across the screen. The scene changes, and the story moves on.",
+        "audio": "b07",
+        "after": {
+          "clear": true
+        }
+      },
+      {
+        "puppet": "semar",
+        "x": 0.5,
+        "cue": "Bring on Semar",
+        "story": "Now, a little laughter. Semar isn't in the Ramayana, but the dalang brings him in to ease the tension, and to give wise advice.",
+        "speak": "Now, a little laughter. Suh-mar isn't in the Rah-mah-yah-na. But the dah-lahng brings him in, to ease the tension, and to give wise advice.",
+        "audio": "b08",
+        "after": {
+          "exit": [
+            "semar"
+          ]
+        }
+      },
+      {
+        "puppet": "hanoman",
+        "x": 0.32,
+        "enter": [
+          {
+            "puppet": "rama",
+            "x": 0.15
+          }
         ],
-        "answer": 0,
-        "note": "Local versions feature figures like Sang Nila Utama, Hang Nadim and Hang Tuah, alongside the Ramayana and Mahabharata."
+        "cue": "Bring on Hanoman",
+        "story": "Rama gathers allies. Hanoman, the white monkey, a strong and capable general, joins him.",
+        "speak": "Rah-ma gathers allies. Ha-no-mahn, the white monkey, a strong and capable general, joins him.",
+        "audio": "b09"
+      },
+      {
+        "puppet": "wibisana",
+        "x": 0.46,
+        "cue": "Bring on Wibisana",
+        "story": "Even Wibisana, Rahwana's own brother, turns from Alengka and crosses to Rama's side.",
+        "speak": "Even Wee-bee-sah-na, Rah-wah-na's own brother, turns from Ah-leng-ka, and crosses to Rah-ma's side.",
+        "audio": "b10"
+      },
+      {
+        "puppet": "ogre",
+        "x": 0.76,
+        "cue": "Send in an ogre",
+        "story": "Rahwana's ogres march out to meet them, huge and full of brute force.",
+        "speak": "Rah-wah-na's ogres march out to meet them. Huge, and full of brute force.",
+        "audio": "b11",
+        "after": {
+          "story": "The battle rages, and Rama's side wins.",
+          "speak": "The battle rages. And Rah-ma's side wins.",
+          "audio": "b11x",
+          "fall": [
+            "ogre"
+          ]
+        }
+      },
+      {
+        "puppet": "sinta",
+        "x": 0.58,
+        "clear": true,
+        "enter": [
+          {
+            "puppet": "rama",
+            "x": 0.4
+          }
+        ],
+        "cue": "Bring Sinta home",
+        "story": "At last, Sinta is free, and she comes home to Rama.",
+        "speak": "At last, Sinta is free. And she comes home to Rah-ma.",
+        "audio": "b12"
+      },
+      {
+        "puppet": "kayon",
+        "x": 0.5,
+        "clear": true,
+        "cue": "Plant the kayon to close the night",
+        "story": "And so the story ends as it began, with the tree of life in the middle of the screen.",
+        "speak": "And so the story ends as it began. With the tree of life, in the middle of the screen.",
+        "audio": "b13"
       }
     ]
+  },
+  "about": {
+    "title": "The puppets you played",
+    "figures": [
+      {
+        "src": "images/kayon.webp",
+        "alt": "Kayon shadow puppet",
+        "caption": "<a href=\"https://www.roots.gov.sg/Collection-Landing/listing/1073677\">Kayon</a>, the Tree of Life or Cosmic Mountain. Placed in the middle of the screen to start or end a show. Java, 20th century. Asian Civilisations Museum, 1994-03833."
+      },
+      {
+        "src": "images/rama.webp",
+        "alt": "Rama shadow puppet",
+        "caption": "<a href=\"https://www.roots.gov.sg/Collection-Landing/listing/1077163\">Rama</a>. His black face shows his noble line; downward gaze, narrow eyes and narrow stance mark him as refined. Java, 20th century. Asian Civilisations Museum, XXXX-05222."
+      },
+      {
+        "src": "images/sinta.webp",
+        "alt": "Dewi Sinta shadow puppet",
+        "caption": "<a href=\"https://www.roots.gov.sg/Collection-Landing/listing/1072846\">Dewi Sinta</a>. Small eyes, slim nose, downward gaze and narrow stance. Java, 20th century. Asian Civilisations Museum, 1994-03892."
+      },
+      {
+        "src": "images/lesmana.webp",
+        "alt": "Lesmana shadow puppet",
+        "caption": "<a href=\"https://www.roots.gov.sg/Collection-Landing/listing/1072802\">Lesmana</a>, Rama's brother. Java, 20th century. Asian Civilisations Museum, 1994-04027."
+      },
+      {
+        "src": "images/deer.webp",
+        "alt": "Golden Deer shadow puppet",
+        "caption": "<a href=\"https://www.roots.gov.sg/Collection-Landing/listing/1113992\">Golden Deer</a>, the demon Maricha in disguise, distracting Rama and Laksmana away from Sita. This one is from Bali, where the same Ramayana is told. Made by Awang Bin Sitai, 1996. Asian Civilisations Museum, 1996-01525."
+      },
+      {
+        "src": "images/rahwana.webp",
+        "alt": "Rahwana shadow puppet",
+        "caption": "<a href=\"https://www.roots.gov.sg/Collection-Landing/listing/1065877\">Rahwana</a>, ruler of Alengka. Blue face, forward-looking gaze, wide-open eyes, sneering mouth and wide stance. Java, 20th century. Asian Civilisations Museum, 1994-03936."
+      },
+      {
+        "src": "images/jatayu.webp",
+        "alt": "Garuda shadow puppet",
+        "caption": "Jatayu is a Garuda bird. This <a href=\"https://www.roots.gov.sg/Collection-Landing/listing/1073347\">Garuda</a> puppet stands in for him. Java, 20th century. Asian Civilisations Museum, 1994-03834."
+      },
+      {
+        "src": "images/hanoman.webp",
+        "alt": "Hanoman shadow puppet",
+        "caption": "<a href=\"https://www.roots.gov.sg/Collection-Landing/listing/1073091\">Hanoman</a>, the white monkey and Rama's ally. Java, 20th century. Asian Civilisations Museum, 1994-04072."
+      },
+      {
+        "src": "images/wibisana.webp",
+        "alt": "Wibisana shadow puppet",
+        "caption": "<a href=\"https://www.roots.gov.sg/Collection-Landing/listing/1073201\">Wibisana</a>, Rahwana's younger brother, drawn with the features of a refined character. Java, 20th century. Asian Civilisations Museum, 1994-03992."
+      },
+      {
+        "src": "images/ogre.webp",
+        "alt": "Ogre shadow puppet",
+        "caption": "<a href=\"https://www.roots.gov.sg/Collection-Landing/listing/1077718\">Ogre</a>. Wide-open eyes, bulbous nose and a grin showing his teeth. Java, 20th century. Asian Civilisations Museum, XXXX-06278."
+      },
+      {
+        "src": "images/semar.webp",
+        "alt": "Semar shadow puppet",
+        "caption": "<a href=\"https://www.roots.gov.sg/Collection-Landing/listing/1078983\">Semar</a>, chief of the panakawan: comic relief, and wise friends to the noble characters. Java, 20th century. Asian Civilisations Museum, XXXX-05266."
+      }
+    ],
+    "cards": [
+      {
+        "title": "Good on the left, bad on the right",
+        "text": "Puppets wait staked in a banana trunk: good characters on the dalang's left, bad on his right. That's how the trunk at the bottom of the game is laid out."
+      },
+      {
+        "title": "One person, every voice",
+        "text": "The dalang moves every puppet, voices every character, leads the singers and conducts a gamelan of about 25 musicians."
+      },
+      {
+        "title": "In Singapore",
+        "text": "Wayang kulit likely came to Singapore with migrants from Java. Today it is performed at festivals, schools and arts venues, and local shows feature heroes like Sang Nila Utama, Hang Nadim and Hang Tuah."
+      }
+    ],
+    "sources": {
+      "facts": "Facts from <a href=\"https://www.roots.gov.sg/stories-landing/stories/Behind-the-Shadows-Javanese-Wayang-Kulit-Puppets\">Behind the Shadows</a>, the <a href=\"https://www.roots.gov.sg/ich-landing/ich/wayang-kulit\">Wayang Kulit</a> ICH entry and each puppet's collection listing on Roots.sg, National Heritage Board.",
+      "media": [
+        "Puppet photographs: Asian Civilisations Museum collection, via Roots.sg. Backgrounds removed for the game.",
+        "Narration: computer-generated (macOS text-to-speech). Music: <a href=\"https://freemusicarchive.org/music/Gamelan_Nyai_Saraswati/Performing_Music_of_Central_Java/gamelan_nyai_saraswati_-_02_-_ladrang_wilujeng/\">Ladrang Wilujeng</a> by Gamelan Nyai Saraswati, recorded live at the University of North Carolina at Chapel Hill in 2005, <a href=\"https://creativecommons.org/licenses/by-nc/3.0/us/\">CC BY-NC 3.0 US</a>, from the Free Music Archive. Cut to a loop for the game."
+      ]
+    }
   }
 }

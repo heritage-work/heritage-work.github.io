@@ -160,7 +160,10 @@ export async function run({ slug, root, head }) {
   const stage = el('div', { class: 'card stage' });
   // Show the source while playing too, unless an about section below already lists it.
   const source = game.credit && !game.about ? el('div', { class: 'credit', html: game.credit }) : null;
-  root.append(progress, stage, source ?? '', game.about ? aboutSection(slug, game.about) : '');
+  const about = game.about ? aboutSection(slug, game.about) : null;
+  root.append(progress, stage, source ?? '', about && game.mechanic === 'spice'
+    ? el('details', { class: 'spice-about' }, el('summary', {}, 'The heritage behind the shop'), about)
+    : about ?? '');
 
   // Preload before handing control to the mechanic.
   let assets = {};
@@ -193,15 +196,24 @@ export async function run({ slug, root, head }) {
     assets,
     play,
     audioContext,
-    finish({ score = 0, total = 0, line }) {
+    finish({ score = 0, total = 0, line, result, headline }) {
       progress.remove();
       source?.remove();
-      stage.replaceWith(resultScreen({ game, score, total, line }));
+      stage.replaceWith(resultScreen({ game, score, total, line, result, headline }));
       remember(`done:${slug}`, { score, total, at: Date.now() });
     }
   };
 
+  // Berkat stays mounted through setup, serving and packing. Install music before play.
+  if (game.music === 'berkat') {
+    const { backgroundMusic } = await import('./berkat-music.js');
+    backgroundMusic({ root, el });
+  }
   await mech.mount({ root: stage, content: game.content, game, api });
+  if (game.music === 'indian-inspired') {
+    const { backgroundMusic } = await import('./music.js');
+    backgroundMusic({ root, el });
+  }
 }
 
 // The heritage behind a game, shown under it the whole time: photos, short facts and sources.
@@ -221,12 +233,14 @@ function aboutSection(slug, about) {
       about.sources.media?.length ? el('ul', {}, about.sources.media.map(m => el('li', { html: m }))) : null) : null);
 }
 
-function resultScreen({ game, score, total, line }) {
+// result replaces the score, for games with an outcome instead of a mark (a personality, say).
+function resultScreen({ game, score, total, line, result, headline }) {
   const verdict = line || defaultLine(score, total);
-  const shareText = `${game.title} ${score}/${total} — ${verdict}`;
+  const shareText = result ? `${game.title}: ${result}` : `${game.title} ${score}/${total} — ${verdict}`;
   const box = el('div', { class: 'card result' },
-    el('div', { class: 'kicker' }, 'Done'),
-    el('div', { class: 'score' }, total ? `${score}/${total}` : '✓'),
+    el('div', { class: 'kicker' }, result ? 'You are' : 'Done'),
+    headline ? el('h2', { class: 'result-headline' }, headline) : null,
+    el('div', { class: 'score' }, result || (total ? `${score}/${total}${headline ? ' points' : ''}` : '✓')),
     el('p', { class: 'muted' }, verdict),
     game.fact ? el('div', { class: 'fact' },
       el('strong', {}, 'One thing to keep: '), game.fact) : null,

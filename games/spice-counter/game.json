@@ -1,0 +1,176 @@
+{
+  "title": "The Spice Counter",
+  "kicker": "Little India",
+  "mechanic": "spice",
+  "music": "indian-inspired",
+  "blurb": "Six days behind a provision shop counter. Scoop, grind and bag each blend before your customers lose patience.",
+  "fact": "Not every blend goes through the mill. Panch phoron, a Bengali mix of five seeds, is usually kept whole and fried in oil before anything else goes in the pot. That's why yours never went near the mill.",
+  "credit": "Inspired by <a href=\"https://www.roots.gov.sg/Collection-Landing/listing/1181973\">A provision shop selling spices in Little India</a>, postcard, c. 1980s, accession no. 2008-05275, collection of the National Museum of Singapore, <a href=\"https://www.roots.gov.sg\">Roots.sg</a>. Customers, prices and scoop counts are made up for the game. Game art includes original AI-generated customer portraits and shop scenery. Background music is an original synthesized Indian-inspired instrumental.",
+  "assets": {
+    "scoopTool": { "image": "images/scoop.webp" },
+    "shopInterior": {
+      "image": "images/shop-interior.webp"
+    },
+    "customer-aunty": {
+      "image": "images/customer-aunty.webp"
+    },
+    "customer-uncle": {
+      "image": "images/customer-uncle.webp"
+    },
+    "customer-mak-cik": {
+      "image": "images/customer-mak-cik.webp"
+    },
+    "customer-cook": {
+      "image": "images/customer-cook.webp"
+    },
+    "customer-stallholder": {
+      "image": "images/customer-stallholder.webp"
+    },
+    "customer-visitor": {
+      "image": "images/customer-visitor.webp"
+    }
+  },
+  "content": {
+    "spices": [
+      { "id": "coriander", "name": "Coriander", "colour": "#b98f52", "speck": "#8a6534", "texture": "seed" },
+      { "id": "chilli", "name": "Chilli", "colour": "#b5301f", "speck": "#7c1a10", "texture": "flake" },
+      { "id": "cumin", "name": "Cumin", "colour": "#8f7145", "speck": "#5f4826", "texture": "grain" },
+      { "id": "fennel", "name": "Fennel", "colour": "#99a05c", "speck": "#68703a", "texture": "grain" },
+      { "id": "turmeric", "name": "Turmeric", "colour": "#e6a81e", "speck": "#bd8210", "texture": "powder" },
+      { "id": "pepper", "name": "Black pepper", "colour": "#3b322c", "speck": "#6b5d52", "texture": "seed" },
+      { "id": "fenugreek", "name": "Fenugreek", "colour": "#c9a13f", "speck": "#92701f", "texture": "grain" },
+      { "id": "mustard", "name": "Mustard seed", "colour": "#4a2d22", "speck": "#83563f", "texture": "seed" },
+      { "id": "nigella", "name": "Nigella", "colour": "#1f1c1f", "speck": "#57525a", "texture": "grain" },
+      { "id": "cinnamon", "name": "Cinnamon", "colour": "#a7633a", "speck": "#70401f", "texture": "stick" },
+      { "id": "clove", "name": "Cloves", "colour": "#5a3524", "speck": "#2f1a10", "texture": "grain" },
+      { "id": "cardamom", "name": "Cardamom", "colour": "#a4b27a", "speck": "#6f7f4b", "texture": "pod" }
+    ],
+    "blends": [
+      { "id": "fish", "name": "Fish curry powder", "short": "Fish curry", "price": 6,
+        "recipe": { "coriander": 2, "fennel": 1, "cumin": 1, "turmeric": 1, "chilli": 1 } },
+      { "id": "rasam", "name": "Rasam powder", "short": "Rasam", "price": 5,
+        "recipe": { "pepper": 2, "coriander": 1, "cumin": 1, "chilli": 1 } },
+      { "id": "sambar", "name": "Sambar powder", "short": "Sambar", "price": 6,
+        "recipe": { "chilli": 2, "coriander": 2, "fenugreek": 1, "turmeric": 1 } },
+      { "id": "panch", "name": "Panch phoron", "short": "Panch phoron", "price": 7, "whole": true,
+        "recipe": { "fenugreek": 1, "nigella": 1, "cumin": 1, "mustard": 1, "fennel": 1 } },
+      { "id": "meat", "name": "Meat curry powder", "short": "Meat curry", "price": 8,
+        "recipe": { "coriander": 2, "chilli": 1, "cinnamon": 1, "clove": 1, "cardamom": 1 } },
+      { "id": "garam", "name": "Garam masala", "short": "Garam masala", "price": 8,
+        "recipe": { "cardamom": 1, "cinnamon": 1, "clove": 1, "pepper": 1, "cumin": 1, "coriander": 1 } }
+    ],
+    "customers": [
+      { "name": "Aunty", "portrait": "customer-aunty", "patience": 1, "pay": 1,
+        "look": { "skin": "#8d5a3b", "hair": "#1d1714", "top": "#a4284a", "style": "bun" },
+        "thanks": "Just right, thank you!", "close": "Hmm. It will do.", "wrong": "That's not what I asked for." },
+      { "name": "Uncle", "portrait": "customer-uncle", "patience": 1.15, "pay": 1,
+        "look": { "skin": "#7a4c30", "hair": "#d9d3c8", "top": "#e8e0cf", "style": "bald" },
+        "thanks": "Smells like home.", "close": "Not quite, but okay.", "wrong": "Try that one again, please." },
+      { "name": "Mak Cik", "portrait": "customer-mak-cik", "patience": 1, "pay": 1,
+        "look": { "skin": "#c08e68", "hair": "#2e6f6a", "top": "#2e6f6a", "style": "scarf" },
+        "thanks": "Terima kasih!", "close": "Close enough, I suppose.", "wrong": "No, no, this one isn't right." },
+      { "name": "Restaurant cook", "portrait": "customer-cook", "patience": 0.8, "pay": 1.5,
+        "look": { "skin": "#9a6642", "hair": "#191512", "top": "#f4f1ea", "style": "cook" },
+        "thanks": "Good. Lunch is saved.", "close": "My customers will notice.", "wrong": "I can't serve this!" },
+      { "name": "Stallholder", "portrait": "customer-stallholder", "patience": 0.9, "pay": 1.25,
+        "look": { "skin": "#d6a97f", "hair": "#2a2320", "top": "#3c6a9c", "style": "short" },
+        "thanks": "Quick work, boss!", "close": "Next time, more careful.", "wrong": "Aiyah, wrong one!" },
+      { "name": "Visitor", "portrait": "customer-visitor", "patience": 1.25, "pay": 1,
+        "look": { "skin": "#e8c4a4", "hair": "#a4682f", "top": "#d98a2b", "style": "hat" },
+        "thanks": "It smells wonderful!", "close": "I'm sure it's lovely.", "wrong": "Sorry, that's not on my list." }
+    ],
+    "days": [
+      {
+        "title": "Opening up",
+        "intro": "Your first morning at the counter. Two blends, six sacks, and customers who'll wait a while.",
+        "steps": [
+          "Tap a sack for one scoop. The order slip keeps count.",
+          "Press Grind & bag. The mill runs by itself, so start the next mix.",
+          "Tap the finished packet, then the customer it's for."
+        ],
+        "spices": ["coriander", "chilli", "cumin", "fennel", "turmeric", "pepper"],
+        "blends": ["fish", "rasam"],
+        "spots": 2, "customers": 6, "gap": 10, "patience": 65, "mills": 1, "grind": 3,
+        "goals": [30, 48, 63]
+      },
+      {
+        "title": "Sambar day",
+        "intro": "Sambar powder joins the list, heavy on chilli with a little bitter fenugreek. A third customer can reach the counter now.",
+        "spices": ["coriander", "chilli", "cumin", "fennel", "turmeric", "pepper", "fenugreek"],
+        "blends": ["fish", "rasam", "sambar"],
+        "spots": 3, "customers": 9, "gap": 9, "patience": 60, "mills": 1, "grind": 3,
+        "goals": [55, 85, 104]
+      },
+      {
+        "title": "Keep it whole",
+        "intro": "Panch phoron is five seeds in equal parts, and it stays whole. Skip the mill and press Bag whole. Grind it and it's ruined.",
+        "spices": ["coriander", "chilli", "cumin", "fennel", "turmeric", "pepper", "fenugreek", "mustard", "nigella"],
+        "blends": ["fish", "rasam", "sambar", "panch"],
+        "spots": 3, "customers": 10, "gap": 8, "patience": 55, "mills": 1, "grind": 3,
+        "goals": [60, 95, 121]
+      },
+      {
+        "title": "A second mill",
+        "intro": "Meat curry powder and garam masala bring in the warm spices: cinnamon, cloves and cardamom. Two mills now, so keep both turning.",
+        "spices": ["coriander", "chilli", "cumin", "fennel", "turmeric", "pepper", "fenugreek", "mustard", "nigella", "cinnamon", "clove", "cardamom"],
+        "blends": ["fish", "sambar", "panch", "meat", "garam"],
+        "spots": 3, "customers": 12, "gap": 7.5, "patience": 50, "mills": 2, "grind": 3,
+        "goals": [75, 130, 164]
+      },
+      {
+        "title": "The regulars",
+        "intro": "Regulars don't read out recipes. They just say what they want. Can't remember one? Peek at the book for $1.",
+        "spices": ["coriander", "chilli", "cumin", "fennel", "turmeric", "pepper", "fenugreek", "mustard", "nigella", "cinnamon", "clove", "cardamom"],
+        "blends": ["fish", "rasam", "sambar", "panch", "meat", "garam"],
+        "hidden": true,
+        "spots": 3, "customers": 12, "gap": 9, "patience": 60, "mills": 2, "grind": 3,
+        "goals": [65, 120, 160]
+      },
+      {
+        "title": "Deepavali week",
+        "intro": "The busiest week of the year. Everyone's cooking for family, and four customers can crowd the counter at once.",
+        "spices": ["coriander", "chilli", "cumin", "fennel", "turmeric", "pepper", "fenugreek", "mustard", "nigella", "cinnamon", "clove", "cardamom"],
+        "blends": ["fish", "rasam", "sambar", "panch", "meat", "garam"],
+        "hidden": true,
+        "spots": 4, "customers": 16, "gap": 7, "patience": 55, "mills": 2, "grind": 3,
+        "goals": [95, 160, 219]
+      }
+    ]
+  },
+  "about": {
+    "title": "A provision shop in Little India",
+    "figures": [
+      {
+        "src": "images/roots-postcard.jpg",
+        "alt": "Postcard of a shopkeeper reaching into one of many metal bowls of spices on a long counter, with shelves of yellow and green bottles behind",
+        "caption": "<i>A provision shop selling spices in Little India</i>, postcard, c. 1980s. Accession no. 2008-05275, collection of the National Museum of Singapore, via <a href=\"https://www.roots.gov.sg/Collection-Landing/listing/1181973\" target=\"_blank\" rel=\"noopener\">Roots.sg</a>."
+      }
+    ],
+    "cards": [
+      {
+        "title": "Before it was Little India",
+        "text": "The district was simply called Serangoon, after one of Singapore's earliest roads. The name Little India only became official in the 1980s, around the time of this postcard."
+      },
+      {
+        "title": "Shops for a growing community",
+        "text": "As the Indian population grew, shops sprang up to serve it: garland makers, goldsmiths, tailors, restaurateurs, and sellers of saris, spices and provisions from India. Provision-shop owners were often Tamils."
+      },
+      {
+        "title": "Deepavali on Campbell Lane",
+        "text": "Today Campbell Lane hosts a Festival Village at Deepavali, with pushcarts selling costumes, jewellery, food, handicrafts, spices and carpets."
+      },
+      {
+        "title": "Every cook's own ratio",
+        "text": "The scoop counts here are simplified for the game. Real blends vary by brand, region and family, and sambar powder usually has lentils and rice in it too."
+      }
+    ],
+    "sources": {
+      "facts": "Facts: <a href=\"https://www.roots.gov.sg/stories-landing/stories/little-india-a-cultural-and-historical-precinct/story\" target=\"_blank\" rel=\"noopener\">Little India: A Cultural and Historical Precinct</a> by Ruchi Mittal (MuseSG, June 2017) and the <a href=\"https://www.roots.gov.sg/-/media/Roots/Files/little-india-heritage-trail/nhb_littleindia-trail-booklet_2018.pdf\" target=\"_blank\" rel=\"noopener\">Little India Heritage Trail booklet</a>, National Heritage Board.",
+      "media": [
+        "Blend ingredients drawn from: <a href=\"https://www.bongeats.com/recipe/panch-phoron\" target=\"_blank\" rel=\"noopener\">Bong Eats</a> (panch phoron), <a href=\"https://www.vegrecipesofindia.com/rasam-powder-recipe/\" target=\"_blank\" rel=\"noopener\">Veg Recipes of India</a> (rasam), <a href=\"https://www.padhuskitchen.com/2009/08/recipe-for-sambar-powder-and-rasam.html/amp?m=0\" target=\"_blank\" rel=\"noopener\">Padhu's Kitchen</a> (sambar), <a href=\"https://asiasociety.org/node/359\" target=\"_blank\" rel=\"noopener\">Asia Society</a> (garam masala), and the ingredient lists on Singapore retail fish and meat curry powders.",
+        "Postcard: National Museum of Singapore, via Roots.sg, resized for this page.",
+        "Customer portraits and shop scenery: original AI-generated illustrations. Spice sacks and other game art: original. Music: original, synthesized in the browser."
+      ]
+    }
+  }
+}
